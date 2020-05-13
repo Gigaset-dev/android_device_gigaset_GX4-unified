@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/gigaset/GX4
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
