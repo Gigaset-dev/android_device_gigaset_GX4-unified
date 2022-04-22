@@ -470,6 +470,7 @@ vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt
 vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
+vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/mt6789/libGLES_mali.so:vendor/lib/egl/libGLES_mali.so
@@ -506,6 +507,8 @@ vendor/lib/vendor.mediatek.hardware.pq@2.10.so
 vendor/lib/vendor.mediatek.hardware.pq@2.11.so
 vendor/lib/vendor.mediatek.hardware.pq@2.12.so
 vendor/lib/vendor.mediatek.hardware.pq@2.13.so
+vendor/lib/vendor.mediatek.hardware.pq@2.14.so
+vendor/lib/vendor.mediatek.hardware.pq@2.15.so
 vendor/lib/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib/vendor.mediatek.hardware.pq@2.3.so
 vendor/lib/vendor.mediatek.hardware.pq@2.4.so
@@ -555,6 +558,8 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.11.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.12.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
@@ -568,6 +573,12 @@ vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+vendor/lib64/hw/mt6789/gralloc.common.so:vendor/lib64/hw/gralloc.memetek.so
+vendor/lib/hw/mt6789/gralloc.common.so:vendor/lib/hw/gralloc.memetek.so
+vendor/lib/hw/mt6789/vulkan.mali.so:vendor/lib/hw/vulkan.mali.so
+vendor/lib64/hw/mt6789/vulkan.mali.so:vendor/lib64/hw/vulkan.mali.so
+vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:vendor/lib/arm.graphics-V1-ndk_platform.so
+vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so:vendor/lib64/arm.graphics-V1-ndk_platform.so
 
 # DMC
 vendor/bin/dmc_core
@@ -1107,6 +1118,8 @@ vendor/lib64/libtranslator_mdmi_v2.8.2.so
 vendor/lib64/libtranslator_utils.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
+vendor/lib/libmtknetutils.so
+vendor/lib64/libmtknetutils.so
 vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
@@ -1149,6 +1162,10 @@ vendor/lib/libdynamiclog.so
 vendor/lib64/libconnfem.so
 vendor/lib64/libforkexecwrap.so
 
+# Memtrack
+vendor/etc/vintf/manifest/memtrack-mediatek.xml
+vendor/etc/init/memtrack-mediatek.rc
+vendor/bin/hw/android.hardware.memtrack-service.mediatek
 
 # TEE
 vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta

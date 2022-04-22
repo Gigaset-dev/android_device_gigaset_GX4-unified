@@ -147,6 +147,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := 30
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
 # Treble
 BOARD_VNDK_VERSION := current
 
