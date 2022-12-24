@@ -10,8 +10,6 @@ $(call inherit-product, vendor/gigaset/GX4/GX4-vendor.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-PRODUCT_SOONG_NAMESPACES += hardware/mediatek
-
 PRODUCT_RO_FILE_SYSTEM ?= ext4
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -324,6 +322,13 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor \
     android.hardware.usb.gadget@1.0.vendor \
     android.hardware.usb.gadget@1.1.vendor
+
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-mtkimpl.recovery
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
 
 # Verified Boot
 PRODUCT_COPY_FILES += \
