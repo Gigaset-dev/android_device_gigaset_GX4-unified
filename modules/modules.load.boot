@@ -1,9 +1,6 @@
 mkp.ko
 bootprof.ko
 dbgtop-drm.ko
-vcp_status.ko
-mtk_slbc.ko
-hardware_info.ko
 mrdump.ko
 mtk_disp_notify.ko
 aee_aed.ko

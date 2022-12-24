@@ -60,12 +60,21 @@ BOARD_DO_NOT_STRIP_VENDOR_KERNEL_RAMDISK_MODULES := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
 # Kernel Modules
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
-
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
-BOARD_VENDOR_KERNEL_MODULES_ALIAS_FILE := $(DEVICE_PATH)/modules.alias
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.boot))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+
+TARGET_KERNEL_EXT_MODULE_ROOT=kernel/gigaset/techpack
+TARGET_KERNEL_EXT_MODULES+= \
+	gpu \
+	connectivity/common \
+	connectivity/conninfra \
+	connectivity/connfem \
+	connectivity/gps/gps_scp \
+	connectivity/gps/gps_pwr \
+	connectivity/gps/gps_scp \
+	connectivity/fmradio
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
