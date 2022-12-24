@@ -1,84 +1,97 @@
 prebuilt_etc {
     name: "fstab.mt6789",
-    src: "fstab.mt6789",
+    src: "etc/fstab.mt6789",
     vendor: true,
     vendor_ramdisk_available: true,
 }
 
 prebuilt_etc {
     name: "init.aee.rc",
-    src: "init.aee.rc",
+    src: "etc/init/hw/init.aee.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.cgroup.rc",
-    src: "init.cgroup.rc",
+    src: "etc/init/hw/init.cgroup.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.common.rc",
-    src: "init.connectivity.common.rc",
+    src: "etc/init/hw/init.connectivity.common.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.rc",
-    src: "init.connectivity.rc",
+    src: "etc/init/hw/init.connectivity.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.modem.rc",
-    src: "init.modem.rc",
+    src: "etc/init/hw/init.modem.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6789.rc",
-    src: "init.mt6789.rc",
+    src: "etc/init/hw/init.mt6789.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6789.usb.rc",
-    src: "init.mt6789.usb.rc",
+    src: "etc/init/hw/init.mt6789.usb.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.project.rc",
-    src: "init.project.rc",
+    src: "etc/init/hw/init.project.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.sensor_2_0.rc",
-    src: "init.sensor_2_0.rc",
+    src: "etc/init/hw/init.sensor_2_0.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.stnfc.rc",
-    src: "init.stnfc.rc",
+    src: "etc/init/hw/init.stnfc.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init_connectivity.rc",
-    src: "init_connectivity.rc",
+    src: "etc/init/hw/init_connectivity.rc",
     sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "etc/init/hw/init.mtkgki.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.insmod.mt6789.cfg",
+    src: "etc/init.insmod.mt6789.cfg",
     vendor: true,
 }
 

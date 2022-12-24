@@ -87,8 +87,7 @@ PRODUCT_COPY_FILES += \
 
 # Initialization
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789 \
-    $(LOCAL_PATH)/modules.load:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules/modules.load
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := true
@@ -110,8 +109,13 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     init.stnfc.rc \
     init_connectivity.rc \
-    ueventd.mt6789.rc
+    ueventd.mt6789.rc \
+    init.mtkgki.rc \
+    init.insmod.mt6789.cfg
 
+# Shell scripts
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/rootdir/bin/init.insmod.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.insmod.sh
 
 # Secure Element
 PRODUCT_PACKAGES += \
@@ -309,17 +313,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor
 
-# Boot Control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl \
-    libmtk_bsg \
-    android.hardware.boot@1.2-impl.recovery \
-    android.hardware.boot@1.2-service \
-    android.hardware.boot@1.1-service \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-mtkimpl.recovery
+	android.hardware.boot@1.2-mtkimpl
 
 # USB
 PRODUCT_PACKAGES += \
