@@ -819,6 +819,7 @@ vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/mt6789/libDR.so:vendor/lib64/libDR.so
+vendor/lib64/libviagpsrpc.so
 
 # Health
 vendor/bin/fuelgauged
@@ -1161,6 +1162,8 @@ vendor/lib/libconnfem.so
 vendor/lib/libdynamiclog.so
 vendor/lib64/libconnfem.so
 vendor/lib64/libforkexecwrap.so
+vendor/lib/libstagefrighthw.so
+vendor/lib64/libstagefrighthw.so
 
 # Memtrack
 vendor/etc/vintf/manifest/memtrack-mediatek.xml

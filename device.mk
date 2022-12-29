@@ -109,7 +109,11 @@ PRODUCT_PACKAGES += \
     init_connectivity.rc \
     ueventd.mt6789.rc \
     init.mtkgki.rc \
-    init.insmod.mt6789.cfg
+    init.insmod.mt6789.cfg \
+    factory_init.connectivity.common.rc \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc
 
 # Shell scripts
 PRODUCT_COPY_FILES += \
