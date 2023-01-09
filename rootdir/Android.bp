@@ -6,6 +6,20 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "microtrust.bp_kmsetkey_ca.rc",
+    src: "etc/init/microtrust.bp_kmsetkey_ca.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "microtrust.rc",
+    src: "etc/init/microtrust.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.aee.rc",
     src: "etc/init/hw/init.aee.rc",
     sub_dir: "init/hw",

@@ -113,7 +113,9 @@ PRODUCT_PACKAGES += \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
     factory_init.project.rc \
-    factory_init.rc
+    factory_init.rc \
+    microtrust.bp_kmsetkey_ca.rc \
+    microtrust.rc
 
 # Shell scripts
 PRODUCT_COPY_FILES += \
@@ -155,7 +157,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/bluetooth_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_offload_audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
+    $(LOCAL_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -276,7 +279,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
-    # Sensors
+# Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.0.vendor \
@@ -285,6 +288,9 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.0-service-multihal.nashc \
     libsensorndkbridge
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/rootdir/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -306,6 +312,12 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio@1.6.vendor
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor \
+    android.hardware.thermal@2.0-impl \
+    android.hardware.thermal@1.0-impl
 
 # Power
 PRODUCT_PACKAGES += \

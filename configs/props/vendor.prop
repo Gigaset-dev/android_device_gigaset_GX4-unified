@@ -115,7 +115,7 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 media.c2.dmabuf.padding=3072
 
 # FRP
-ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
+ro.frp.pst=/dev/block/by-name/frp
 
 # GPS
 ro.vendor.mtk_agps_app=1
@@ -199,9 +199,8 @@ ro.lmk.kill_timeout_ms=100
 
 # TEE
 ro.mtk_key_manager_support=1
-ro.hardware.kmsetkey=trustonic
-ro.vendor.mtk_trustonic_tee_support=1
-ro.hardware.gatekeeper=trustonic
+ro.hardware.kmsetkey=beanpod
+ro.hardware.gatekeeper=beanpod
 ro.vendor.mtk_tee_gp_support=1
 
 # Neural Networks
@@ -222,6 +221,7 @@ ro.vendor.mtk_prefer_64bit_proc=0
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1-V7
 ro.vendor.rc=/vendor/etc/init/hw/
+ro.vendor.mtk_thermal_2_0=1
 
 # WiFi
 ro.vendor.wifi.sap.interface=ap0
