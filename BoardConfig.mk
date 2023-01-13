@@ -67,14 +67,7 @@ BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BO
 
 TARGET_KERNEL_EXT_MODULE_ROOT=kernel/gigaset/mt6789-extras
 TARGET_KERNEL_EXT_MODULES+= \
-	gpu \
-	connectivity/common \
-	connectivity/conninfra \
-	connectivity/connfem \
-	connectivity/gps/gps_scp \
-	connectivity/gps/gps_pwr \
-	connectivity/gps/gps_scp \
-	connectivity/fmradio
+	gpu
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true

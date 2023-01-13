@@ -1,4 +1,5 @@
 # AAL
+ro.vendor.pq.mtk_aal_support=1
 ro.vendor.mtk_aal_support=1
 
 # AEE
@@ -12,7 +13,6 @@ persist.adb.nonblocking_ffs=0
 aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
 ro.vendor.mtk_audio_alac_support=1
-ro.vendor.mtk_hifiaudio_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_audio_ape_support=1
 
@@ -22,7 +22,7 @@ ro.vendor.bt.platform=connac1x
 # Camera
 vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.cz.enable=1
-ro.vendor.camera3.zsl.default=270
+ro.vendor.camera3.zsl.default=260
 ro.vendor.mtk_camera_app_version=3
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
@@ -39,11 +39,9 @@ persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
 ro.vendor.camera.isp.support.colorspace=0
-ro.vendor.mtk_cam_security_support=1
-ro.mtk_cam_dualzoom_support=1
+ro.vendor.mtk_cam_security_support=0
 ro.vendor.mtk_slow_motion_support=1
 ro.mtk_cam_stereo_camera_support=1
-ro.vendor.mtk_zsdhdr_support=1
 
 # Display
 ro.opengles.version=196610
@@ -219,7 +217,7 @@ ro.vendor.wfd.iframesize.level=0
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mtk_prefer_64bit_proc=0
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1-V7
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V12.11.1_koobee.s0mp1rc.k61v1.64.bsp_P22
 ro.vendor.rc=/vendor/etc/init/hw/
 ro.vendor.mtk_thermal_2_0=1
 
