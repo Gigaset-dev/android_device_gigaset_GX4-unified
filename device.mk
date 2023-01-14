@@ -115,7 +115,9 @@ PRODUCT_PACKAGES += \
     factory_init.project.rc \
     factory_init.rc \
     microtrust.bp_kmsetkey_ca.rc \
-    microtrust.rc
+    microtrust.rc \
+    init.wlan_drv.rc \
+    init.wmt_drv.rc
 
 # Shell scripts
 PRODUCT_COPY_FILES += \
@@ -265,6 +267,33 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.1.vendor \
+    android.hardware.wifi@1.2.vendor \
+    android.hardware.wifi@1.3.vendor \
+    android.hardware.wifi@1.4.vendor \
+    android.hardware.wifi@1.5.vendor \
+    android.hardware.wifi@1.6.vendor \
+    android.hardware.wifi.hostapd@1.0.vendor \
+    android.hardware.wifi.hostapd@1.1.vendor \
+    android.hardware.wifi.hostapd@1.2.vendor \
+    android.hardware.wifi.hostapd@1.3.vendor \
+    android.hardware.wifi.supplicant@1.0.vendor \
+    android.hardware.wifi.supplicant@1.1.vendor \
+    android.hardware.wifi.supplicant@1.2.vendor \
+    android.hardware.wifi.supplicant@1.3.vendor \
+    android.hardware.wifi.supplicant@1.4.vendor \
+    android.hardware.tetheroffload.config@1.0.vendor \
+    android.hardware.tetheroffload.control@1.0.vendor \
+    android.hardware.tetheroffload.control@1.1.vendor \
+    android.hardware.wifi@1.0-service-lazy.GX4
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -297,7 +326,9 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \
     lib_android_keymaster_keymint_utils.vendor \
     libkeymint.vendor \
-    libkeymaster_portable.vendor
+    libkeymaster_portable.vendor \
+    libkeystore-wifi-hidl \
+    libkeystore-engine-wifi-hidl
 
 # Radio
 PRODUCT_PACKAGES += \
