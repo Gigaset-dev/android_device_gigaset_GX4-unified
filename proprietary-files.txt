@@ -575,8 +575,8 @@ vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
-vendor/lib64/hw/mt6789/gralloc.common.so:vendor/lib64/hw/gralloc.memetek.so
-vendor/lib/hw/mt6789/gralloc.common.so:vendor/lib/hw/gralloc.memetek.so
+vendor/lib64/hw/mt6789/gralloc.common.so:vendor/lib64/hw/gralloc.common.so
+vendor/lib/hw/mt6789/gralloc.common.so:vendor/lib/hw/gralloc.common.so
 vendor/lib/hw/mt6789/vulkan.mali.so:vendor/lib/hw/vulkan.mali.so
 vendor/lib64/hw/mt6789/vulkan.mali.so:vendor/lib64/hw/vulkan.mali.so
 vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:vendor/lib/arm.graphics-V1-ndk_platform.so
