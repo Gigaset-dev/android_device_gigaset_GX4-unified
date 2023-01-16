@@ -122,7 +122,7 @@ ro.frp.pst=/dev/block/by-name/frp
 # GPS
 ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
-ro.vendor.gps.chrdev=gps_drv
+ro.vendor.gps.chrdev=gps_drv_stp
 ro.vendor.mtk_log_hide_gps=0
 
 # Radio
