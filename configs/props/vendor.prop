@@ -20,6 +20,7 @@ ro.vendor.mtk_audio_ape_support=1
 ro.vendor.bt.platform=connac1x
 
 # Camera
+camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.cz.enable=1
 ro.vendor.camera3.zsl.default=260
@@ -38,10 +39,12 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
+ro.odm.rear_camera_sub=1
 ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.mtk_cam_security_support=0
 ro.vendor.mtk_slow_motion_support=1
 ro.mtk_cam_stereo_camera_support=1
+vendor.mtk.camera.app.fd.video=1
 
 # Display
 ro.opengles.version=196610
@@ -187,6 +190,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Sensors
 ro.vendor.mtk.sensor.support=yes
+ro.vendor.init.sensor.rc=init.sensor_2_0.rc
 
 # LMK
 ro.lmk.psi_complete_stall_ms=150
