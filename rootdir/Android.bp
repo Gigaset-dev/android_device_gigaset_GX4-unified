@@ -20,20 +20,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.wmt_drv.rc",
-    src: "etc/init/init.wmt_drv.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.wlan_drv.rc",
-    src: "etc/init/init.wlan_drv.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.aee.rc",
     src: "etc/init/hw/init.aee.rc",
     sub_dir: "init/hw",

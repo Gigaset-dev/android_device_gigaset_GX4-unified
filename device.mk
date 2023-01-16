@@ -115,9 +115,7 @@ PRODUCT_PACKAGES += \
     factory_init.project.rc \
     factory_init.rc \
     microtrust.bp_kmsetkey_ca.rc \
-    microtrust.rc \
-    init.wlan_drv.rc \
-    init.wmt_drv.rc
+    microtrust.rc
 
 # Shell scripts
 PRODUCT_COPY_FILES += \
