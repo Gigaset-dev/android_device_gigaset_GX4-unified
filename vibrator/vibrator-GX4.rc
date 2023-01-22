@@ -1,0 +1,5 @@
+service vendor.vibrator-GX4 /vendor/bin/hw/android.hardware.vibrator-service.GX4
+    class hal
+    user system
+    group system
+

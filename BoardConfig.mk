@@ -21,7 +21,9 @@ include build/make/target/board/BoardConfigMainlineCommon.mk
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
     boot \
+    vendor_boot \
     system \
+    product \
     vendor
 
 BUILD_BROKEN_DUP_RULES := true
@@ -137,7 +139,6 @@ TARGET_COPY_OUT_PRODUCT := product
 BOARD_RAMDISK_USE_LZ4 := true
 
 # Recovery
-BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6789
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888

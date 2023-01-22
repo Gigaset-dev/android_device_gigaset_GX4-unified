@@ -241,6 +241,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.GX4
+
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
@@ -277,7 +281,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.3.vendor \
     android.hardware.wifi@1.4.vendor \
     android.hardware.wifi@1.5.vendor \
-    android.hardware.wifi@1.6.vendor \
     android.hardware.wifi.hostapd@1.0.vendor \
     android.hardware.wifi.hostapd@1.1.vendor \
     android.hardware.wifi.hostapd@1.2.vendor \
@@ -372,6 +375,10 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor \
     android.hardware.usb.gadget@1.0.vendor \
     android.hardware.usb.gadget@1.1.vendor
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.GX4
 
 # Boot control
 PRODUCT_PACKAGES += \
