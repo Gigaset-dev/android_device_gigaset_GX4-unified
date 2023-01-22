@@ -1407,6 +1407,7 @@ vendor/lib64/libconnfem.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
+vendor/lib64/hw/fingerprint.default.so
 
 # Memtrack
 vendor/etc/vintf/manifest/memtrack-mediatek.xml
