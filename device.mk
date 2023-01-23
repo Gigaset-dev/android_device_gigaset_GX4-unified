@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
     microtrust.bp_kmsetkey_ca.rc \
     microtrust.rc
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-kpd.kl
+
 # Shell scripts
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/bin/init.insmod.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.insmod.sh
@@ -274,6 +278,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_PACKAGES += \
     FrameworksResOverlayGX4
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_ENFORCE_RRO_TARGETS += *
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.1.vendor \
