@@ -290,6 +290,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
+# FM radio
+PRODUCT_PACKAGES += \
+    MtkFMRadio
+
 # Security
 BOOT_SECURITY_PATCH := 2022-08-17
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)

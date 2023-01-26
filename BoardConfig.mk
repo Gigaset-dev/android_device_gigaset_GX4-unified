@@ -73,6 +73,9 @@ BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BO
 TARGET_KERNEL_EXT_MODULE_ROOT=kernel/gigaset/mt6789-extras
 TARGET_KERNEL_EXT_MODULES+= \
 	gpu \
+	connectivity/fmradio \
+	connectivity/connfem \
+	connectivity/conninfra \
 	connectivity/gps/gps_pwr \
 	connectivity/gps/gps_scp \
 	connectivity/gps/gps_stp

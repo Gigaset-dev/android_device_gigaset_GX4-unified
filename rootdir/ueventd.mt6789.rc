@@ -59,7 +59,7 @@
 /dev/fw_log_wifi          0660   wifi     wifi
 
 # FMRadio
-/dev/fm                   0660   media     media
+/dev/fm                   0666   media     media
 # prize-add-pengzhipeng-20211228-start
 /dev/spidev1.0            0666   system     system
 # prize-add-pengzhipeng-20211228-end
