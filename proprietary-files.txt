@@ -781,6 +781,16 @@ vendor/lib/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
+# NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service-st
+vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
+vendor/bin/nfcstackp-vendor
+vendor/bin/STFlashTool
+vendor/etc/libnfc-hal-st.conf
+vendor/etc/libnfc-nci.conf
+vendor/etc/st21nfc_conf.txt
+vendor/lib64/nfc_nci.st21nfc.st.so
+
 # Firmware
 vendor/etc/MNL_Config.xml
 vendor/etc/default_pd_calibration.bin
