@@ -256,6 +256,7 @@ debug.sf.early.sf.duration=27600000
 debug.sf.earlyGl.app.duration=20000000
 debug.sf.earlyGl.sf.duration=27600000
 debug.sf.enable_hwc_vds=0
+debug.sf.predict_hwc_composition_strategy=0
 debug.sf.hwc.min.duration=17000000
 debug.sf.late.app.duration=20000000
 debug.sf.late.sf.duration=27600000
