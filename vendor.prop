@@ -249,6 +249,7 @@ init.userspace_reboot.is_supported=true
 # SurfaceFlinger
 debug.renderengine.backend=skiaglthreaded
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_transaction_tracing=false
 debug.sf.enable_gl_backpressure=1
 debug.sf.early.app.duration=20000000
 debug.sf.early.sf.duration=27600000
