@@ -252,7 +252,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.GX4
+    android.hardware.light-service.GX4 \
+
+# Paranoid Glyph
+PRODUCT_PACKAGES += \
+    XtendedGlyph
 
 # Media
 PRODUCT_PACKAGES += \

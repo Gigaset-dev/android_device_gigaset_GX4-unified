@@ -123,6 +123,7 @@
 /sys/class/leds/blue   pwm_duty      0664  system   system
 /sys/class/leds/blue   pwm_dim_freq      0664  system   system
 #prize add by liunao for back ring led end
+/sys/class/leds/aw210xx_led/singleled 0666 system    system
 
 # add the read write right of ttyUSB*
 /dev/bus/usb/*     	  0660   root       usb

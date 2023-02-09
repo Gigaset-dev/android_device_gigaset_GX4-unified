@@ -163,6 +163,9 @@ TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := 30
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6789
+
 # Treble
 BOARD_VNDK_VERSION := current
 
