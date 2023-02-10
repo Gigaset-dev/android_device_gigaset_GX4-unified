@@ -308,7 +308,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayGX4
+    FrameworksResOverlayGX4 \
+    SystemUIResOverlayGX4
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
