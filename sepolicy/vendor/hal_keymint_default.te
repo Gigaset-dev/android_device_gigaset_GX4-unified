@@ -1,0 +1,4 @@
+allow hal_keymint_default init:unix_stream_socket connectto;
+allow hal_keymint_default property_socket:sock_file write;
+allow hal_keymint_default vendor_mtk_soter_teei_prop:file { getattr map open read };
+allow hal_keymint_default vendor_mtk_soter_teei_prop:property_service set;

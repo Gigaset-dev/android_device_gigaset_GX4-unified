@@ -36,7 +36,7 @@ public final class Constants {
     public static final String GLYPH_NOTIFS_SUB_CATEGORY = "glyph_settings_notifs_sub";
     public static final String GLYPH_NOTIFS_SUB_ENABLE = "glyph_settings_notifs_sub_toggle";
 
-    public static final String BASELEDPATH = "/sys/class/leds/aw210xx_led/";                     // Base LED Path
+    public static final String BASELEDPATH = "/sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/";                     // Base LED Path
     public static final String SINGLELEDPATH =  BASELEDPATH + "singleled";                   // Single LED
 
     public static final String[] APPSTOIGNORE = {

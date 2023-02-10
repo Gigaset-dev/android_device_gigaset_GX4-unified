@@ -1,0 +1,2 @@
+allow zygote vendor_mtk_gpu_prop:file { getattr map open read };
+allow zygote vendor_mtk_sec_video_path_support_prop:file { getattr map open read };

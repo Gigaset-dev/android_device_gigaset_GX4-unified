@@ -50,7 +50,7 @@ TARGET_USES_64_BIT_BINDER := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_TAGS_OFFSET := 0x47C80000
 BOARD_KERNEL_CMDLINE := \
-    bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
+    bootopt=64S3,32N2,64N2
 BOARD_KERNEL_PAGESIZE := 4096
 
 BOARD_RAMDISK_OFFSET := 0x66F00000
@@ -165,6 +165,12 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
+
+# SELinux
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Treble
 BOARD_VNDK_VERSION := current

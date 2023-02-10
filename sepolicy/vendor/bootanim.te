@@ -1,0 +1,1 @@
+allow bootanim vendor_mtk_sec_video_path_support_prop:file { getattr map open read };

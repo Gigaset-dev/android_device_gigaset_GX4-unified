@@ -782,6 +782,8 @@ on boot
     chown system system /sys/class/leds/green/led_time
     chown system system /sys/class/leds/blue/led_time
 #prize add by lipengpeng 20220823 end 
+    chown system system /sys/class/leds/aw210xx_led/singleled
+    chmod 0666 /sys/class/leds/aw210xx_led/singleled
 
     # gauge symbolic
     symlink /sys/devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge /dev/gauge

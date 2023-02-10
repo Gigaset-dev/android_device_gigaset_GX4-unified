@@ -1,0 +1,1 @@
+allow mtk_hal_sensors vendor_mtk_sensor_prop:file { read open getattr map };

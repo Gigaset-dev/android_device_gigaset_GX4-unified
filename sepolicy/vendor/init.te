@@ -1,0 +1,4 @@
+allow init servicemanager:binder { call transfer };
+allow init sysfs:file setattr;
+allow init vendor_file:file execute;
+
