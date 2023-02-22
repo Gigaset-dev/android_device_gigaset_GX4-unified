@@ -244,3 +244,11 @@ persist.vendor.connsys.dynamic.dump=0
 vendor.connsys.driver.ready=no
 ro.vendor.connsys.dedicated.log=1
 ro.vendor.wifi.sap.concurrent.iface=ap1
+
+# Dalvik
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
