@@ -222,5 +222,10 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 
+     <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- ImsService -->
+        <item>com.mediatek.ims</item>
+    </string-array>
+
 </resources>
 

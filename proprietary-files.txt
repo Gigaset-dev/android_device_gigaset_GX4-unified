@@ -328,7 +328,6 @@ vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so:vendor/lib/li
 vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview.so:vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Preview.so
 vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so:vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so
 vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so:vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so
-vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_HDR.so
 vendor/lib/libCamera_s5kgm1stmipiraw_Scene_lowlight.so
 vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Video_1080.so:vendor/lib/libCamera_s5kgm1stmipiraw_Video_1080.so
 vendor/lib/libCamera_s5kgm1stmipiraw_Video_1080_120.so
@@ -344,7 +343,6 @@ vendor/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so:vendor/lib64/libSonyIMX23
 vendor/lib64/mt6789/libSonyIMX338PdafLibraryWrapper.so:vendor/lib64/libSonyIMX338PdafLibraryWrapper.so
 vendor/lib64/mt6789/libSonyIMX386PdafLibraryWrapper.so:vendor/lib64/libSonyIMX386PdafLibraryWrapper.so
 vendor/lib64/mt6789/libSonyIMX519PdafLibraryWrapper.so:vendor/lib64/libSonyIMX519PdafLibraryWrapper.so
-vendor/lib/libCamera_s5kgm1stmipiraw_Scene_HDR.so
 vendor/lib/s5k2lqsx_mipi_raw_IdxMgr.so
 vendor/lib/libasn1c_core.so
 vendor/lib/libasn1c_mapi.so
@@ -643,6 +641,17 @@ vendor/lib64/libgz_uree.so
 vendor/lib64/mt6789/libmtkcam_fwkutils.so:vendor/lib64/libmtkcam_fwkutils.so
 vendor/lib64/libfcell.so
 vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so:vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
+vendor/lib64/libmorpho_Superlowlight.so
+vendor/lib64/libBST3DDNS.so
+vendor/lib64/libBSTAiScene.so
+vendor/lib64/libBSTBackLightDetect.so
+vendor/lib64/libBSTBeauty.so
+vendor/lib64/libBSTSWAD.so
+vendor/lib64/libBSTSingleAIBokeh.so
+vendor/lib64/libloadfilterhal.so
+vendor/lib/libtensorflowlite_c.so
+vendor/lib64/libtensorflowlite.so
+vendor/lib64/libtensorflowlite_c.so
 
 # Display
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789:vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
@@ -1522,7 +1531,7 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
--priv-app/ImsService/ImsService.apk|9a5a6e0dc48ac1b862ddd430ab13e080a2148b0f
+-priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
