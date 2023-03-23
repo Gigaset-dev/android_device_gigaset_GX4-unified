@@ -1726,7 +1726,7 @@ vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
 vendor/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta
 vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
-vendor/thh/ta/isee_model.json
+vendor/thh/ta/isee_model.json|086bcb644a42ad345dcd52732a62c932c07bec2a
 
 # WiFi
 vendor/bin/hw/hostapd
