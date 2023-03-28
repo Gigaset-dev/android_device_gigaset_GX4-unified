@@ -781,7 +781,14 @@ on boot
 	chown system system /sys/class/leds/red/led_time
     chown system system /sys/class/leds/green/led_time
     chown system system /sys/class/leds/blue/led_time
-#prize add by lipengpeng 20220823 end 
+#prize add by lipengpeng 20220823 end
+
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/singleled
+    chmod 0660 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/singleled
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/effect
+    chmod 0660 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/effect
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/hwen
+    chmod 0660 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/hwen
 
     # gauge symbolic
     symlink /sys/devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge /dev/gauge
