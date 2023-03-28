@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017 The LineageOS Project
+                   2020-2022 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <string name="summary_empty" translatable="false"></string>
+
+    <!-- App Name -->
+    <string name="spotlight_settings_app_name">Spotlight interface</string>
+
+    <!-- Ambient Display -->
+    <string name="spotlight_settings_enable">Spotlight ring</string>
+    <string name="spotlight_settings_title">Spotlight interface</string>
+    <string name="spotlight_settings_summary">Options for Spotlight ring</string>
+
+    <string name="spotlight_settings_brightness">Brightness</string>
+
+    <string name="spotlight_settings_charging_title">Charging animation</string>
+    <string name="spotlight_settings_charging_level_title">Battery level</string>
+    <string name="spotlight_settings_charging_level_summary">Show battery level when plugging in</string>
+
+    <string name="spotlight_settings_call_title">Calls</string>
+    <string name="spotlight_settings_call_toggle_title">Call animation</string>
+    <string name="spotlight_settings_call_toggle_summary">Flash LEDs on incoming calls</string>
+
+    <string name="spotlight_settings_notifs_title">Notifications</string>
+    <string name="spotlight_settings_notifs_toggle_title">Notification animation</string>
+    <string name="spotlight_settings_notifs_toggle_summary">Flash LEDs on new notifications</string>
+    <string name="spotlight_settings_notifs_sub_title">Apps to allow</string>
+    <string name="spotlight_settings_notifs_sub_toggle_title">Enable notification animation</string>
+
+    <string name="spotlight_settings_flashlight_toggle_title">Flashlight</string>
+    <string name="spotlight_settings_flashlight_toggle_summary">Flash LEDs when using the flashlight</string>
+
+    <string name="spotlight_settings_music_toggle_title">Music animation</string>
+    <string name="spotlight_settings_music_toggle_summary">Flash LEDs when music is playing</string>
+
+</resources>
