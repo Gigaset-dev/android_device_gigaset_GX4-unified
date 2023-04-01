@@ -1,0 +1,2 @@
+get_prop(platform_app, vendor_mtk_camera_prop)
+get_prop(platform_app, vendor_mtk_pq_ro_prop)

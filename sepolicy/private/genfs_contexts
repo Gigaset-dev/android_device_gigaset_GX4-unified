@@ -1,0 +1,2 @@
+# LEDs
+genfscon sysfs /devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds                          u:object_r:sysfs_spotlight_leds:s0

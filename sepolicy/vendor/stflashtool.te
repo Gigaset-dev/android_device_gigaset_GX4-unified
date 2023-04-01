@@ -1,0 +1,2 @@
+allow stflashtool sysfs_soc:dir r_dir_perms;
+allow stflashtool sysfs_soc:file r_file_perms;
