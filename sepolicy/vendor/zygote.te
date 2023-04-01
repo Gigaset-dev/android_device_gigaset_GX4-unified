@@ -1,0 +1,2 @@
+get_prop(zygote, vendor_mtk_gpu_prop)
+get_prop(zygote, vendor_mtk_sec_video_path_support_prop)
