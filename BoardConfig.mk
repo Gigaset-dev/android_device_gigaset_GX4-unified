@@ -66,6 +66,9 @@ BOARD_MKBOOTIMG_ARGS += --board ""
 # Display
 TARGET_SCREEN_DENSITY := 320
 
+# FM Radio
+BOARD_HAVE_MTK_FM := true
+
 # Filesystem
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
