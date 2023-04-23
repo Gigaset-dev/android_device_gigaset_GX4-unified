@@ -1,0 +1,1 @@
+type cmd_charge_disable, sysfs_type, fs_type, mlstrustedobject;

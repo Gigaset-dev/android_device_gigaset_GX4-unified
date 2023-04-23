@@ -14,3 +14,6 @@ genfscon sysfs /devices/platform/charger/power_supply/cw-bat/wakeup14           
 genfscon sysfs /devices/platform/soc/11015000.i2c/i2c-3/3-0008/wakeup                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10228000.gce/wakeup                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11e00000.i2c/i2c-0/0-0071/power_supply/bms/wakeup18     u:object_r:sysfs_wakeup:s0
+
+# label for charge disabler
+genfscon sysfs /devices/platform/charger/cmd_charge_disable        u:object_r:cmd_charge_disable:s0
