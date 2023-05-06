@@ -111,7 +111,7 @@ on charger
     chown system system /sys/class/leds/red/brightness
     chown system system /sys/class/leds/green/brightness
 
-    start vendor.light-default
+    start vendor.light
 
     # Stop bootprof
     write /proc/bootprof "0"
