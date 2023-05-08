@@ -126,11 +126,18 @@ public final class AnimationManager {
 
     public void enableHW(boolean enable) {
         submit(() -> {
-            mLEDManager.enableAllLEDs(enable);
+            mLEDManager.enableHW(enable);
         });
     }
 
     public void playCharging() {
+        StatusManager.setChargingLedsActive(false);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            Log.e(TAG, "Error while playing charging animation", e);
+        }
+
         StatusManager.setChargingLedsActive(true);
         submit(() -> {
             int solid_leds = 0;
@@ -168,8 +175,14 @@ public final class AnimationManager {
     }
 
     public void playCall() {
-        StatusManager.setCallLedsActive(true);
+        StatusManager.setCallLedsActive(false);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            Log.e(TAG, "Error while playing charging animation", e);
+        }
 
+        StatusManager.setCallLedsActive(true);
         submit(() -> {
             mLEDManager.enableAllLEDs(false);
             try {

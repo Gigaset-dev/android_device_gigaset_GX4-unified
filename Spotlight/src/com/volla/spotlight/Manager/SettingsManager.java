@@ -46,12 +46,12 @@ public final class SettingsManager {
 
     public static boolean isSpotlightChargingEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(Constants.SPOTLIGHT_CHARGING_LEVEL_ENABLE, false) && isSpotlightEnabled(context);
+                .getBoolean(Constants.SPOTLIGHT_CHARGING_LEVEL_ENABLE, true) && isSpotlightEnabled(context);
     }
 
     public static boolean isSpotlightCallEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(Constants.SPOTLIGHT_CALL_ENABLE, false) && isSpotlightEnabled(context);
+                .getBoolean(Constants.SPOTLIGHT_CALL_ENABLE, true) && isSpotlightEnabled(context);
     }
 
     public static boolean isSpotlightNotifsEnabled(Context context) {
@@ -71,11 +71,11 @@ public final class SettingsManager {
 
     public static boolean isSpotlightFlashlightEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(Constants.SPOTLIGHT_FLASHLIGHT_ENABLE, false) && isSpotlightEnabled(context);
+                .getBoolean(Constants.SPOTLIGHT_FLASHLIGHT_ENABLE, true) && isSpotlightEnabled(context);
     }
 
     public static boolean isSpotlightMusicEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(Constants.SPOTLIGHT_MUSIC_ENABLE, false) && isSpotlightEnabled(context);
+                .getBoolean(Constants.SPOTLIGHT_MUSIC_ENABLE, true) && isSpotlightEnabled(context);
     }
 }
