@@ -19,27 +19,31 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App Name -->
-    <string name="spotlight_settings_app_name">Spotlight-Oberfläche</string>
-
-    <!-- Ambient Display -->
-    <string name="spotlight_settings_enable">Spotlight Beleuchtung</string>
-    <string name="spotlight_settings_title">Spotlight-Oberfläche</string>
-    <string name="spotlight_settings_summary">Anpassen der Spotlightenbeleuchtung</string>
+    <string name="spotlight_settings_app_name">Spotlight-Einstellungen</string>
+    <string name="spotlight_settings_enable">Spotlight-Ring</string>
+    <string name="spotlight_settings_title">Spotlight</string>
+    <string name="spotlight_settings_summary">Optionen für den Spotlight-Ring</string>
 
     <string name="spotlight_settings_brightness">Helligkeit</string>
 
-    <string name="spotlight_settings_charging_title">Ladeanzeige</string>
-    <string name="spotlight_settings_charging_level_title">Akkustand</string>
-    <string name="spotlight_settings_charging_level_summary">Anzeige des Akkustands beim Einstecken</string>
+    <string name="spotlight_settings_charging_title">Aufladestatus</string>
+    <string name="spotlight_settings_charging_level_title">Batteriestatus</string>
+    <string name="spotlight_settings_charging_level_summary">Zeige Batteriestatus, wenn das GErät mit dem Netzteil verbunden ist</string>
 
-    <string name="spotlight_settings_call_title">Anruf</string>
-    <string name="spotlight_settings_call_toggle_title">Animation bei Anruf</string>
-    <string name="spotlight_settings_call_toggle_summary">Blinkende LEDs bei eingehenden Anrufen</string>
+    <string name="spotlight_settings_call_title">Anrufe</string>
+    <string name="spotlight_settings_call_toggle_title">Anrufanimation</string>
+    <string name="spotlight_settings_call_toggle_summary">Lichtsignal bei eingehenden anrufen.</string>
 
-    <string name="spotlight_settings_notifs_title">Benachrichtigung</string>
-    <string name="spotlight_settings_notifs_toggle_title">Animation bei Benachrichtigung</string>
-    <string name="spotlight_settings_notifs_toggle_summary">Blinkende LEDs bei neuen Benachrichtigungen</string>
-    <string name="spotlight_settings_notifs_sub_title">Zuzulassende Anwendungen</string>
-    <string name="spotlight_settings_notifs_sub_toggle_title">Animation der Benachrichtigung aktivieren</string>
+    <string name="spotlight_settings_notifs_title">Mitteilungen</string>
+    <string name="spotlight_settings_notifs_toggle_title">Mitteilungsanimation</string>
+    <string name="spotlight_settings_notifs_toggle_summary">Lichtsignal bei ungelesenen Mitteilungen</string>
+    <string name="spotlight_settings_notifs_sub_title">Apps to allow</string>
+    <string name="spotlight_settings_notifs_sub_toggle_title">Erlaube Mitteillungsanimation</string>
+
+    <string name="spotlight_settings_flashlight_toggle_title">Blitzlicht</string>
+    <string name="spotlight_settings_flashlight_toggle_summary">Zusätzliches Licht für Blitzlicht</string>
+
+    <string name="spotlight_settings_music_toggle_title">Musikamiation</string>
+    <string name="spotlight_settings_music_toggle_summary">Pulsierendes Licht zur Musikwiedergabe</string>
 
 </resources>

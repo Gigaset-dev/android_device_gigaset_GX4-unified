@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017 The LineageOS Project
+                   2020-2022 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App Name -->
+    <string name="spotlight_settings_app_name">Configuración de spotlight</string>
+    <string name="spotlight_settings_enable">Anillo Spotlight</string>
+    <string name="spotlight_settings_title">Spotlight</string>
+    <string name="spotlight_settings_summary">Opciones del anillo spotlight</string>
+
+    <string name="spotlight_settings_brightness">brillo</string>
+
+    <string name="spotlight_settings_charging_title">estado de carga</string>
+    <string name="spotlight_settings_charging_level_title">Estado de la batería</string>
+    <string name="spotlight_settings_charging_level_summary">Mostrar estado de la batería cuando el dispositivo está conectado a la fuente de alimentación</string>
+
+    <string name="spotlight_settings_call_title">Llamadas</string>
+    <string name="spotlight_settings_call_toggle_title">Animación de llamada</string>
+    <string name="spotlight_settings_call_toggle_summary">Señal luminosa para llamadas entrantes.</string>
+
+    <string name="spotlight_settings_notifs_title">Notificaciones</string>
+    <string name="spotlight_settings_notifs_toggle_title">Animación de mensajes</string>
+    <string name="spotlight_settings_notifs_toggle_summary">Señal luminosa para mensajes no leídos</string>
+    <string name="spotlight_settings_notifs_sub_title">Aplicaciones a permitir</string>
+    <string name="spotlight_settings_notifs_sub_toggle_title">Permitir animación de alternancia central</string>
+
+    <string name="spotlight_settings_flashlight_toggle_title">flashlight</string>
+    <string name="spotlight_settings_flashlight_toggle_summary">Luz adicional para el flash</string>
+
+    <string name="spotlight_settings_music_toggle_title">Ampliación de música</string>
+    <string name="spotlight_settings_music_toggle_summary">Luz de pulsación para la reproducción de música</string>
+
+</resources>

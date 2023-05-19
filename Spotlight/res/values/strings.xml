@@ -22,33 +22,31 @@
     <string name="summary_empty" translatable="false"></string>
 
     <!-- App Name -->
-    <string name="spotlight_settings_app_name">Spotlight interface</string>
-
-    <!-- Ambient Display -->
+    <string name="spotlight_settings_app_name">Spotlight settings</string>
     <string name="spotlight_settings_enable">Spotlight ring</string>
-    <string name="spotlight_settings_title">Spotlight interface</string>
-    <string name="spotlight_settings_summary">Options for Spotlight ring</string>
+    <string name="spotlight_settings_title">Spotlight</string>
+    <string name="spotlight_settings_summary">Spotlight ring options</string>
 
-    <string name="spotlight_settings_brightness">Brightness</string>
+    <string name="spotlight_settings_brightness">brightness</string>
 
-    <string name="spotlight_settings_charging_title">Charging animation</string>
-    <string name="spotlight_settings_charging_level_title">Battery level</string>
-    <string name="spotlight_settings_charging_level_summary">Show battery level when plugging in</string>
+    <string name="spotlight_settings_charging_title">charging status</string>
+    <string name="spotlight_settings_charging_level_title">Battery status</string>
+    <string name="spotlight_settings_charging_level_summary">Show battery status when the device is connected to the power supply</string>
 
-    <string name="spotlight_settings_call_title">Calls</string>
-    <string name="spotlight_settings_call_toggle_title">Call animation</string>
-    <string name="spotlight_settings_call_toggle_summary">Flash LEDs on incoming calls</string>
+    <string name="spotlight_settings_call_title">calls</string>
+    <string name="spotlight_settings_call_toggle_title">call animation</string>
+    <string name="spotlight_settings_call_toggle_summary">Light signal on incoming call.</string>
 
     <string name="spotlight_settings_notifs_title">Notifications</string>
-    <string name="spotlight_settings_notifs_toggle_title">Notification animation</string>
-    <string name="spotlight_settings_notifs_toggle_summary">Flash LEDs on new notifications</string>
+    <string name="spotlight_settings_notifs_toggle_title">Message animation</string>
+    <string name="spotlight_settings_notifs_toggle_summary">Light signal on unread messages</string>
     <string name="spotlight_settings_notifs_sub_title">Apps to allow</string>
-    <string name="spotlight_settings_notifs_sub_toggle_title">Enable notification animation</string>
+    <string name="spotlight_settings_notifs_sub_toggle_title">Allow mid-illumination animation</string>
 
-    <string name="spotlight_settings_flashlight_toggle_title">Flashlight</string>
-    <string name="spotlight_settings_flashlight_toggle_summary">Flash LEDs when using the flashlight</string>
+    <string name="spotlight_settings_flashlight_toggle_title">flashlight</string>
+    <string name="spotlight_settings_flashlight_toggle_summary">Additional light for flash</string>
 
     <string name="spotlight_settings_music_toggle_title">Music animation</string>
-    <string name="spotlight_settings_music_toggle_summary">Flash LEDs when music is playing</string>
+    <string name="spotlight_settings_music_toggle_summary">Pulsating light for music playback</string>
 
 </resources>

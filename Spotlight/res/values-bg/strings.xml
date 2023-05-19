@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017 The LineageOS Project
+                   2020-2022 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App Name -->
+    <string name="spotlight_settings_app_name">Настройки на спотлайт</string>
+    <string name="spotlight_settings_enable">Пръстен за спотлайт</string>
+    <string name="spotlight_settings_title">Кръг на спотлайт</string>
+    <string name="spotlight_settings_summary">Опции на пръстена за спотлайт</string>
+
+    <string name="spotlight_settings_brightness">яркост</string>
+
+    <string name="spotlight_settings_charging_title">състояние на зареждане</string>
+    <string name="spotlight_settings_charging_level_title">Състояние на батерията</string>
+    <string name="spotlight_settings_charging_level_summary">Показва състоянието на батерията, когато устройството е свързано към захранването</string>
+
+    <string name="spotlight_settings_call_title">Повиквания</string>
+    <string name="spotlight_settings_call_toggle_title">Анимация на повикванията</string>
+    <string name="spotlight_settings_call_toggle_summary">Светлинен сигнал за входящи повиквания.</string>
+
+    <string name="spotlight_settings_notifs_title">Известия</string>
+    <string name="spotlight_settings_notifs_toggle_title">Анимация на съобщенията</string>
+    <string name="spotlight_settings_notifs_toggle_summary">Светлинен сигнал за непрочетени съобщения</string>
+    <string name="spotlight_settings_notifs_sub_title">Приложения за разрешаване</string>
+    <string name="spotlight_settings_notifs_sub_toggle_title">Анимация на превключване на центъра</string>
+
+    <string name="spotlight_settings_flashlight_toggle_title">светкавица</string>
+    <string name="spotlight_settings_flashlight_toggle_summary">Допълнителна светлина за светкавицата</string>
+
+    <string name="spotlight_settings_music_toggle_title">Музикална амиция</string>
+    <string name="spotlight_settings_music_toggle_summary">Пулсираща светлина за възпроизвеждане на музика</string>
+
+</resources>
