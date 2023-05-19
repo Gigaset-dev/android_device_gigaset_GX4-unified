@@ -137,4 +137,13 @@
         <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="40"></data>
         <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
     </scenario>
+    <scenario powerhint="EXPENSIVE_RENDERING">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3850000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="1"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="50"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="38"></data>
+        <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="50"></data>
+        <data cmd="PERF_RES_GPU_GED_LOADING_BASE_DVFS_STEP" param1="15"></data>
+    </scenario>
 </SCNTABLE>
