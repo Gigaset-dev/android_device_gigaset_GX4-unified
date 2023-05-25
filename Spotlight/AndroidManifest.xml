@@ -90,7 +90,7 @@
                 android:value="@string/spotlight_settings_summary" />
              <meta-data
                 android:name="com.android.settings.order"
-                android:value="-105" />
+                android:value="-111" />
         </activity>
 
         <activity
