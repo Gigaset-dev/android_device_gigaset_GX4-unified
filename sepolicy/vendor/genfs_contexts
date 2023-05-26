@@ -14,6 +14,17 @@ genfscon sysfs /devices/platform/charger/power_supply/cw-bat/wakeup14           
 genfscon sysfs /devices/platform/soc/11015000.i2c/i2c-3/3-0008/wakeup                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10228000.gce/wakeup                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11e00000.i2c/i2c-0/0-0071/power_supply/bms/wakeup18     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11f00000.i2c/i2c-7/7-0066/power_supply/sc8551-standalone/wakeup32                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/wakeup                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/pdpe-state/wakeup12                                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge/power_supply/mtk-gauge/wakeup30     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11015000.i2c/i2c-3/3-002b/wakeup                                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/hf_manager/hf_manager/sar_cali/wakeup147                                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge/power_supply/battery/wakeup29       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11eb0000.i2c/i2c-2/2-006b/power_supply/charger/wakeup19                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11f00000.i2c/i2c-7/7-0066/wakeup                                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt635x-auxadc/wakeup                             u:object_r:sysfs_wakeup:s0
 
 # label for charge disabler
 genfscon sysfs /devices/platform/charger/cmd_charge_disable        u:object_r:cmd_charge_disable:s0
