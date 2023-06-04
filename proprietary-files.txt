@@ -663,7 +663,7 @@ vendor/lib64/mt6789/libmtkcam_imem.so:vendor/lib64/libmtkcam_imem.so
 vendor/lib64/mt6789/libmtkcam_imgbuf.so:vendor/lib64/libmtkcam_imgbuf.so
 vendor/lib64/mt6789/libmtkcam_mapping_mgr.so:vendor/lib64/libmtkcam_mapping_mgr.so
 vendor/lib64/mt6789/libmtkcam_metadata.so:vendor/lib64/libmtkcam_metadata.so
-vendor/lib64/mt6789/libmtkcam_metastore.so:vendor/lib64/libmtkcam_metastore.so|5f37190ab83b2f734b096b7b33ccf60fb3067195
+vendor/lib64/mt6789/libmtkcam_metastore.so:vendor/lib64/libmtkcam_metastore.so|a2ca172d4270232e8fa39c75d75a66fceb042c17
 vendor/lib64/mt6789/libmtkcam_mfb.so:vendor/lib64/libmtkcam_mfb.so
 vendor/lib64/mt6789/libmtkcam_modulefactory_aaa.so:vendor/lib64/libmtkcam_modulefactory_aaa.so
 vendor/lib64/mt6789/libmtkcam_modulefactory_custom.so:vendor/lib64/libmtkcam_modulefactory_custom.so
