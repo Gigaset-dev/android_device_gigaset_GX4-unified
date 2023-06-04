@@ -9,6 +9,9 @@ ro.audio.usb.period_us=16000
 # Brand
 Build.BRAND=MTK
 
+# Camera
+vendor.debug.camera.single_main2=1
+
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 

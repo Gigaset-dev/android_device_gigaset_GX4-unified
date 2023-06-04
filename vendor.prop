@@ -55,7 +55,6 @@ ro.vendor.mtk_cam_security_support=0
 vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=1
 vendor.mtk.camera.app.fd.video=1
-vendor.debug.camera.single_main2=1
 
 # DRM
 drm.service.enabled=true
