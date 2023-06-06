@@ -1,0 +1,8 @@
+package vendor.mediatek.hardware.nvram@1.0;
+
+interface INvram {
+    readFileByName(string filename, uint32_t size)
+            generates (string data);
+    writeFileByNamevec(string filename, uint32_t size, vec<uint8_t> data)
+            generates (int8_t retval);
+};

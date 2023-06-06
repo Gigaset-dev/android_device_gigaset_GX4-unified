@@ -1,0 +1,6 @@
+java_library {
+    name: "NvramUtils",
+    installable: true,
+    srcs: ["NvramUtils.java"],
+    static_libs: ["vendor.mediatek.hardware.nvram-V1.0-java"],
+}
