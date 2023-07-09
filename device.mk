@@ -298,6 +298,7 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayGX4 \
     SystemUIOverlayGX4 \
     TelephonyOverlayGX4 \
+    CarrierConfigOverlayGX4 \
     TetheringResOverlay \
     WifiResOverlay
 
