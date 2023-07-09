@@ -125,16 +125,21 @@ ro.vendor.mtk_log_hide_gps=0
 persist.vendor.xfrm_support=1
 
 # IMS
-ro.vendor.md_auto_setup_ims=1
 persist.vendor.ims_support=1
-persist.vendor.mtk_dynamic_ims_switch=1
 persist.vendor.mims_support=2
-persist.vendor.mtk_wfc_support=1
-persist.vendor.volte_support=1
 persist.vendor.mtk.volte.enable=1
-persist.vendor.vilte_support=1
-persist.vendor.viwifi_support=1
 persist.vendor.mtk_ct_volte_support=3
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_sim_switch_policy=2
+persist.vendor.mtk_wfc_support=1
+persist.vendor.vilte_support=0
+persist.vendor.viwifi_support=1
+persist.vendor.volte_support=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.dbg.ims_volte_enable=1
+ro.vendor.md_auto_setup_ims=1
 
 # LMK
 ro.lmk.downgrade_pressure=60
