@@ -27,4 +27,4 @@ genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt635x-auxadc/wakeup                             u:object_r:sysfs_wakeup:s0
 
 # label for charge disabler
-genfscon sysfs /devices/platform/charger/cmd_charge_disable        u:object_r:cmd_charge_disable:s0
+genfscon sysfs /class/cmd_charge_disable/cmd_charge_disable        u:object_r:cmd_charge_disable:s0
