@@ -53,6 +53,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio@7.0.vendor \
     audio.bluetooth.default \
+    audio.usb.default \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
     libalsautils \
