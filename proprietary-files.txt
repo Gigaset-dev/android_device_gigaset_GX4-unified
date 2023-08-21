@@ -1,4 +1,4 @@
-# Unpinned blobs from GX4-user 12 SP1A.210812.016 1671087805 release-keys
+# Unpinned blobs from GX4_PRO-user 12 SP1A.210812.016 1680773996 release-keys
 
 # AAL
 vendor/lib/libaal_cust.so
