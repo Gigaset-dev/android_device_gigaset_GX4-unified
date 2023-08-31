@@ -74,6 +74,9 @@ function blob_fixup {
         vendor/lib64/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/etc/gnss/agps_profiles_conf2.xml)
+            sed -i 's|imsi_enable="true"|imsi_enable="false"|' "${2}"
+            ;;
     esac
 }
 
