@@ -54,6 +54,9 @@ function blob_fixup {
         vendor/lib64/libwifi-hal-mtk.so)
             "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
             ;;
+        vendor/etc/gnss/agps_profiles_conf2.xml)
+            sed -i 's|imsi_enable="true"|imsi_enable="false"|' "${2}"
+            ;;
     esac
 }
 
