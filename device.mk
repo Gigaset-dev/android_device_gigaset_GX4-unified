@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.composer@2.3-service \
+    android.hardware.graphics.composer@2.4-service \
     libhwc2on1adapter \
     libhwc2onfbadapter.vendor \
     libdrm.vendor \
