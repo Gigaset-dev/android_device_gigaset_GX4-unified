@@ -1700,6 +1700,10 @@ vendor/lib64/libcrypto-md.so
 vendor/lib64/libcurl-md.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libgwsd-ril.so
+vendor/lib64/libgwsdv2-ril.so
+vendor/lib64/libgwsdv3-ril.so
+vendor/lib64/libcs_cs35l45_intf.so
+vendor/lib64/libscltm.so
 vendor/lib64/libhydra.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmmprofile.so
