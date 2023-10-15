@@ -221,7 +221,6 @@ PRODUCT_COPY_FILES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libstdc++.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
