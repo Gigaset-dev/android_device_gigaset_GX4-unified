@@ -145,7 +145,7 @@ PRODUCT_PACKAGES += \
 
 # FM radio
 PRODUCT_PACKAGES += \
-    FMRadio
+    MtkFMRadio
 
 # Health
 PRODUCT_PACKAGES += \
