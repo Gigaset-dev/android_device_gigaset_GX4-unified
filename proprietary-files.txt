@@ -989,7 +989,6 @@ vendor/etc/st21nfc_conf.txt
 vendor/lib64/nfc_nci.st21nfc.st.so
 
 # Factory
--app/DebugLoggerUI/DebugLoggerUI.apk
 -priv-app/EngineerMode/EngineerMode.apk
 -priv-app/PriFactoryTest/PriFactoryTest.apk
 priv-app/PriFactoryTest/lib/arm64/libserial_port_app.so:lib64/libserial_port_app.so
