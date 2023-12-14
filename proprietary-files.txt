@@ -1852,7 +1852,7 @@ vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
 vendor/etc/init/wifimacaddr.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
+vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml:vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.mtk.xml
 vendor/etc/wfd_source_capability.csv
 vendor/lib/libapmonitor_vendor.so
 vendor/lib/libconnfem.so
