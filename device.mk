@@ -253,7 +253,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
+    libcodec2_soft_common.vendor \
+    libstagefright_foundation-v33
 
 # Neural Networks
 PRODUCT_PACKAGES += \
