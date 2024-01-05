@@ -55,4 +55,5 @@ dependencies {
     implementation 'androidx.preference:preference:1.1.0'
 
     implementation project(path: ':SettingsLib')
+    implementation project(path: ':SpotlightSDK')
 }

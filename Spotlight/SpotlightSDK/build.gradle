@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 33
+    namespace 'com.volla.spotlightsdk'
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+        }
+    }
+
+    buildFeatures {
+        aidl = true
+    }
+}
+
+dependencies {
+
+}

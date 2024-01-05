@@ -31,6 +31,7 @@ import com.volla.spotlight.Services.ChargingService;
 import com.volla.spotlight.Services.FlashlightService;
 import com.volla.spotlight.Services.MusicService;
 import com.volla.spotlight.Services.NotificationService;
+import com.volla.spotlight.Services.CustomService;
 
 public final class ServiceUtils {
 
@@ -97,9 +98,23 @@ public final class ServiceUtils {
                 UserHandle.CURRENT);
     }
 
+    public static void startCustomService(Context context) {
+        if (DEBUG) Log.d(TAG, "Starting Spotlight Custom service");
+        context.startServiceAsUser(new Intent(context, CustomService.class),
+                UserHandle.CURRENT);
+    }
+
+    protected static void stopCustomService(Context context) {
+        if (DEBUG) Log.d(TAG, "Stopping Spotlight Custom service");
+        context.stopServiceAsUser(new Intent(context, CustomService.class),
+                UserHandle.CURRENT);
+    }
+
     public static void checkSpotlightService(Context context) {
         AnimationManager animationManager = new AnimationManager(context);
         animationManager.enableHW(SettingsManager.isSpotlightEnabled(context));
+
+        startCustomService(context);
 
         if (SettingsManager.isSpotlightEnabled(context)) {
             Constants.setBrightness(SettingsManager.getSpotlightBrightness(context));
