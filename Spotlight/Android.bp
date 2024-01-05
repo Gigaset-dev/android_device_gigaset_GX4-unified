@@ -24,6 +24,7 @@ android_app {
         "androidx.core_core",
         "androidx.preference_preference",
         "SettingsLib",
+        "volla_spotlight_sdk",
     ],
     required: [
         "privapp_whitelist_com.volla.spotlight.xml",

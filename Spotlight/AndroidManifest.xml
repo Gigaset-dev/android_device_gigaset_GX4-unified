@@ -29,6 +29,9 @@
         android:minSdkVersion="31"
         android:targetSdkVersion="31"/>
 
+    <permission android:name="com.volla.permission.SPOTLIGHT"
+        android:protectionLevel="signature|privileged" />
+
     <application
         android:label="@string/spotlight_settings_app_name"
         android:persistent="true"
@@ -60,6 +63,16 @@
 
         <service
             android:name=".Services.MusicService">
+        </service>
+
+        <service
+            android:name=".Services.CustomService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="SpotlightService" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </service>
 
         <service
