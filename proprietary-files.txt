@@ -998,15 +998,18 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/st21nfc_conf.txt
 vendor/lib64/nfc_nci.st21nfc.st.so
 
+# EngineerMode - from UP1A.231005.007
+-system_ext/app/EngineerMode/EngineerMode.apk
+system_ext/lib64/libem_aoltest_jni.so
+system_ext/lib64/libem_audio_jni.so
+system_ext/lib64/libem_bleoffload_jni.so
+system_ext/lib64/libem_support_jni.so
+system_ext/lib64/libem_wifi_jni.so
+
 # Factory
--priv-app/EngineerMode/EngineerMode.apk
 -priv-app/PriFactoryTest/PriFactoryTest.apk
 priv-app/PriFactoryTest/lib/arm64/libserial_port_app.so:lib64/libserial_port_app.so
-lib64/libem_aoltest_jni.so
-lib64/libem_audio_jni.so
-lib64/libem_support_jni.so
 lib64/libem_usb_jni.so
-lib64/libem_wifi_jni.so
 vendor/bin/meta_tst
 vendor/lib64/libpixelflinger.so
 vendor/lib64/libminiui.so
@@ -1280,34 +1283,40 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/lib/libfgauge_gm30.so
 vendor/lib64/libfgauge_gm30.so
 
-# IMS - from mimir-user 13 TP1A.220624.014 mp1V1110 release-keys
-bin/vtservice|139ddac4f4c264c105dd8e1e0c658ef653faeb32
-etc/init/init.vtservice.rc|abcbc3ffc316b8f1cedffa949aac3b46670d64bc
--framework/mediatek-common.jar|3f3a53f685555d70798a791b8d9f4b4f53b43edd
--framework/mediatek-framework.jar|c41c8c7ee18e32c37a48b6d453f46c25f2fd58c9
--framework/mediatek-ims-base.jar|a49aadb3b9d5531ce93b00af05e6f2862e97d248
--framework/mediatek-ims-common.jar|ac588b0707664a4dba3a82d49ee4e96efceadf6f
--framework/mediatek-ims-extension-plugin.jar|fbadb06fbf2762b181e15c88cbd7ae299a89be71
--framework/mediatek-telecom-common.jar|090f5f0d67ffb1faf21af7465e52e698e63ed56d
--framework/mediatek-telephony-base.jar|d4280b63508223e9df74b1317eaefb7e07e23e1d
--framework/mediatek-telephony-common.jar|da683c3ed7cb48790157cefcf9de5184f991f15a
--framework/mediatek-wfo-legacy.jar|e7932aef0d12968d5d5299e873e5cee545aa57d3
-lib64/libcomutils.so|454be3958e2dc3a014a7cfa360e309ab5d3a1762
-lib64/libimsma.so|38e373a8f10b34264e93866b89f0112b2d5b22f3
-lib64/libimsma_adapt.so|38c844489fac85ea2fe921d259369522567350e7
-lib64/libimsma_rtp.so|455ac909dbdf3fe6f2589462a6da26478b4b8c79
-lib64/libimsma_socketwrapper.so|38e373a8f10b34264e93866b89f0112b2d5b22f3
-lib64/libmtk_vt_service.so|000f18bb0d1a1e645ed79339b8eb5b788775d75d
-lib64/libmtk_vt_wrapper.so|2f126f0d8cbaf83fb654fb3e87cc29eacb2a1022
-lib64/libsignal.so|689de287e713b1b0744a61f99c563f5bd8e7374f
-lib64/libsink.so|aad645eabf22de18e8b5f3f2755b3a8fcbe71b0e
-lib64/libsource.so||567665bbf7305f43f65d0af228d74eb3cd42b8e7
-lib64/libvcodec_cap.so|99e635e3e4a49f2e0ae0c76bbb2d9c6a4a8bfcf1
-lib64/libvcodec_capenc.so|d5861185ea89da0247c80abddc29916eb81a538d
-lib64/libvt_avsync.so|6593f835b38cef623d4d20aa5cd553904415b41d
--priv-app/ImsService/ImsService.apk|76b1f8645b2692f1ecc52a1bdb2027728071912c
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|4dc3c60d436569b357287885ccf27e138e28b7bf
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|2b20197891d43f85f93e09b5ca7dd6e7aa4fee62
+# IMS - from UP1A.231005.007
+-system_ext/framework/mediatek-common.jar
+-system_ext/framework/mediatek-framework.jar
+-system_ext/framework/mediatek-ims-base.jar
+-system_ext/framework/mediatek-ims-common.jar
+-system_ext/framework/mediatek-telecom-common.jar
+-system_ext/framework/mediatek-telephony-base.jar
+-system_ext/priv-app/ImsService/ImsService.apk
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
+system_ext/framework/mediatek-ims-extension-plugin.jar
+system_ext/lib/libmtk_vt_wrapper.so
+system_ext/lib/libmtkperf_client.so
+system_ext/lib/libvcodec_cap.so
+system_ext/lib/libvcodec_capenc.so
+system_ext/lib/libvsim-adaptor-client.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libmtkperf_client.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvsim-adaptor-client.so
+system_ext/lib64/libvt_avsync.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # IMS (vendor)
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
