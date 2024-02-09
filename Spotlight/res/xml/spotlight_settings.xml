@@ -42,9 +42,6 @@
         android:defaultValue="false"
         android:title="@string/spotlight_settings_notifs_toggle_title"
         android:summary="@string/spotlight_settings_notifs_toggle_summary" >
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.volla.spotlight"
-            android:targetClass="com.volla.spotlight.Settings.NotifsSettingsActivity"/>
     </SwitchPreference>
 
     <SwitchPreference
