@@ -39,6 +39,9 @@
     <string name="spotlight_settings_notifs_toggle_summary">Lichtsignal bei ungelesenen Mitteilungen</string>
     <string name="spotlight_settings_notifs_sub_title">Apps to allow</string>
     <string name="spotlight_settings_notifs_sub_toggle_title">Erlaube Mitteillungsanimation</string>
+    <string name="msg_missing_notification_access">Um die Benachrichtigung zu aktivieren, erlauben Sie bitte den Zugriff auf Systembenachrichtigungen für <xliff:g id="name" example="Meine App">%1$s</xliff:g></string>
+    <string name="title_missing_notification_access">Benachrichtigungszugriff erforderlich</string>
+    <string name="title_change_settings">Einstellungen ändern</string>
 
     <string name="spotlight_settings_flashlight_toggle_title">Blitzlicht</string>
     <string name="spotlight_settings_flashlight_toggle_summary">Zusätzliches Licht für Blitzlicht</string>

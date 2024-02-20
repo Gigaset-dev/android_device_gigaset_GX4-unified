@@ -39,6 +39,9 @@
     <string name="spotlight_settings_notifs_toggle_summary">Lichtsignaal voor ongelezen berichten</string>
     <string name="spotlight_settings_notifs_sub_title">Toegelaten apps</string>
     <string name="spotlight_settings_notifs_sub_toggle_title">Allow centre toggle animation</string>
+    <string name="msg_missing_notification_access">Om de melding te activeren, moet u toegang tot systeemmeldingen toestaan voor <xliff:g id="name" example="My App">%1$s</xliff:g></string>
+    <string name="title_missing_notification_access">Meldingstoegang vereist</string>
+    <string name="title_change_settings">Instellingen wijzigen</string>
 
     <string name="spotlight_settings_flashlight_toggle_title">flashlight</string>
     <string name="spotlight_settings_flashlight_toggle_summary">Extra licht voor flitser</string>

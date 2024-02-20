@@ -39,6 +39,9 @@
     <string name="spotlight_settings_notifs_toggle_summary">Segnale luminoso per i messaggi non letti</string>
     <string name="spotlight_settings_notifs_sub_title">Apps da consentire</string>
     <string name="spotlight_settings_notifs_sub_toggle_title">Consentire l\'animazione del centro</string>
+    <string name="msg_missing_notification_access">Per attivare l\'avviso di notifica, consentire l\'accesso alle notifiche di sistema per <xliff:g id="nome" esempio="Mia App">%1$s</xliff:g></string>
+    <string name="title_missing_notification_access">Accesso alle notifiche richiesto</string>
+    <string name="title_change_settings">Modifica impostazioni</string>
 
     <string name="spotlight_settings_flashlight_toggle_title">flashlight</string>
     <string name="spotlight_settings_flashlight_toggle_summary">Luce aggiuntiva per il flash</string>

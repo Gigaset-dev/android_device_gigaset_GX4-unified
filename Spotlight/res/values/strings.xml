@@ -42,8 +42,8 @@
     <string name="spotlight_settings_notifs_toggle_summary">Light signal on unread messages</string>
     <string name="spotlight_settings_notifs_sub_title">Apps to allow</string>
     <string name="spotlight_settings_notifs_sub_toggle_title">Allow mid-illumination animation</string>
-    <string name="msg_missing_notification_access">To show Notification Light, turn on app notifications for <xliff:g id="name" example="My App">%1$s</xliff:g></string>
-    <string name="title_missing_notification_access">Notification access needed</string>
+    <string name="msg_missing_notification_access">To activate the notification notice, please allow access to system notifications for <xliff:g id="name" example="My App">%1$s</xliff:g></string>
+    <string name="title_missing_notification_access">Notification access required</string>
     <string name="title_change_settings">Change settings</string>
 
     <string name="spotlight_settings_flashlight_toggle_title">flashlight</string>

@@ -39,6 +39,9 @@
     <string name="spotlight_settings_notifs_toggle_summary">Светлинен сигнал за непрочетени съобщения</string>
     <string name="spotlight_settings_notifs_sub_title">Приложения за разрешаване</string>
     <string name="spotlight_settings_notifs_sub_toggle_title">Анимация на превключване на центъра</string>
+    <string name="msg_missing_notification_access">За да активирате известието за уведомяване, моля разрешете достъпа до системните известия за <xliff:g id="name" example="My App">%1$s</xliff:g></string>
+    <string name="title_missing_notification_access">Изисква се достъп до известия</string>
+    <string name="title_change_settings">Промяна на настройките</string>
 
     <string name="spotlight_settings_flashlight_toggle_title">светкавица</string>
     <string name="spotlight_settings_flashlight_toggle_summary">Допълнителна светлина за светкавицата</string>
