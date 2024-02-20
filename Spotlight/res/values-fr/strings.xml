@@ -39,6 +39,9 @@
     <string name="spotlight_settings_notifs_toggle_summary">Signal lumineux pour les messages non lus</string>
     <string name="spotlight_settings_notifs_sub_title">Apps à autoriser</string>
     <string name="spotlight_settings_notifs_sub_toggle_title">Autoriser l\'animation de la ligne du milieu</string>
+    <string name="msg_missing_notification_access">Pour activer l\'avis de notification, veuillez autoriser l\'accès aux notifications du système pour <xliff:g id="name" example="My App">%1$s</xliff:g></string>
+    <string name="title_missing_notification_access">Accès aux notifications requis</string>
+    <string name="title_change_settings">Modifier les paramètres</string>
 
     <string name="spotlight_settings_flashlight_toggle_title">Flash</string>
     <string name="spotlight_settings_flashlight_toggle_summary">Lumière supplémentaire pour le flash</string>

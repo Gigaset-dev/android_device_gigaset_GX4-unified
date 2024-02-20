@@ -39,6 +39,9 @@
     <string name="spotlight_settings_notifs_toggle_summary">Señal luminosa para mensajes no leídos</string>
     <string name="spotlight_settings_notifs_sub_title">Aplicaciones a permitir</string>
     <string name="spotlight_settings_notifs_sub_toggle_title">Permitir animación de alternancia central</string>
+    <string name="msg_missing_notification_access">Para activar el aviso de notificación, permite el acceso a las notificaciones del sistema para <xliff:g id="nombre" example="Mi App">%1$s</xliff:g></string>
+    <string name="title_missing_notification_access">Se requiere acceso a las notificaciones</string>
+    <string name="title_change_settings">Cambiar configuración</string>
 
     <string name="spotlight_settings_flashlight_toggle_title">flashlight</string>
     <string name="spotlight_settings_flashlight_toggle_summary">Luz adicional para el flash</string>
