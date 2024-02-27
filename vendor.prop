@@ -81,6 +81,10 @@ ro.vendor.mtk_emmc_support=1
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.incremental.enable=yes
 
+# Dalvik
+dalvik.vm.boot-dex2oat-cpu-set=1,2,3,4,5
+dalvik.vm.boot-dex2oat-threads=4
+
 # Display
 debug.mediatek.disp_decompress=1
 debug.mediatek.appgamepq_compress=1
