@@ -200,6 +200,10 @@ ro.vendor.mtk_nfc_addon_support=1
 # OEM Unlock
 ro.oem_unlock_supported=1
 
+# OTA
+ro.virtual_ab.batch_writes=true
+ro.virtual_ab.compression.threads=true
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.radio.msimmode=dsds
