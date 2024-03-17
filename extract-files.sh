@@ -77,6 +77,9 @@ function blob_fixup {
         vendor/etc/gnss/agps_profiles_conf2.xml)
             sed -i 's|imsi_enable="true"|imsi_enable="false"|' "${2}"
             ;;
+        vendor/bin/factory)
+            "${PATCHELF}" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "${2}"
+            ;;
     esac
 }
 

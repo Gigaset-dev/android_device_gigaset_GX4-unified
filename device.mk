@@ -243,6 +243,7 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.GX4 \
+    android.hardware.light@2.0.vendor \
     SpotlightRing
 
 # Lineage Health

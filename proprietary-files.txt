@@ -999,6 +999,9 @@ vendor/lib64/nfc_nci.st21nfc.st.so
 -priv-app/PriFactoryTest/PriFactoryTest.apk
 priv-app/PriFactoryTest/lib/arm64/libserial_port_app.so:lib64/libserial_port_app.so
 lib64/libem_usb_jni.so
+vendor/bin/meta_tst
+vendor/lib64/libpixelflinger.so
+vendor/lib64/libminiui.so
 
 # MDlogger
 system_ext/bin/emdlogger1
