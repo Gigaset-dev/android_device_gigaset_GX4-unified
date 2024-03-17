@@ -281,6 +281,7 @@ vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 
 # Camera
+lib64/libjni_pq.so|d21f54f51d5bd1f0659d9390f12544c9ceaaffc9
 vendor/bin/hw/mt6789/camerahalserver:vendor/bin/hw/camerahalserver
 vendor/etc/BSTAISCENE
 vendor/etc/BSTSWADParamList.cfg
@@ -755,6 +756,7 @@ system_ext/lib64/libapuwarexrp.mtk.so
 system_ext/lib64/libapuwarexrp_v2.mtk.so
 system_ext/lib64/libarmnn_ndk.mtk.so
 system_ext/lib64/libaudiocompensationfilter.so
+system_ext/lib64/libaudiotoolkit.so
 system_ext/lib64/libcmdl_ndk.mtk.so
 system_ext/lib64/libcomposer_ext.so
 system_ext/lib64/libdrmmtkutil.so
@@ -978,13 +980,6 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# EngineerMode - from android-13.0.0_r75
--lib64/libem_aoltest_jni.so|d340e73c7c278f7b93244cdbac4a2c571d39bda1
--lib64/libem_audio_jni.so|f1c3f026e3114cdd0a9c6dd2082da0702a061b62
--lib64/libem_support_jni.so|9c8b748665d95bbcd046183a40cf5995573e0e06
--lib64/libem_wifi_jni.so|a3841edc23c5d5656c5d49264694a8da0764302f
--priv-app/EngineerMode/EngineerMode.apk|ca76a696c3cc0388859bd2045c64b94cb140a67e
-
 # NFC
 vendor/bin/STFlashTool
 vendor/bin/hw/android.hardware.nfc@1.2-service-st
@@ -996,9 +991,14 @@ vendor/etc/st21nfc_conf.txt
 vendor/lib64/nfc_nci.st21nfc.st.so
 
 # Factory
+-priv-app/EngineerMode/EngineerMode.apk
 -priv-app/PriFactoryTest/PriFactoryTest.apk
 priv-app/PriFactoryTest/lib/arm64/libserial_port_app.so:lib64/libserial_port_app.so
+lib64/libem_aoltest_jni.so
+lib64/libem_audio_jni.so
+lib64/libem_support_jni.so
 lib64/libem_usb_jni.so
+lib64/libem_wifi_jni.so
 vendor/bin/meta_tst
 vendor/lib64/libpixelflinger.so
 vendor/lib64/libminiui.so
@@ -1276,78 +1276,41 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/lib/libfgauge_gm30.so
 vendor/lib64/libfgauge_gm30.so
 
-# IMS - from android-13.0.0_r75
--app/Rcse/Rcse.apk|39928578f0586b3faf50e7c289f4b57d63d010b8
--app/mediatek-res/mediatek-res.apk|02f98534fa51b5368ccc9501ac44a04214d8a359
-bin/vcodeccap_main|ad22b5a5f6b362943dec1f4bfadd365e38d33824
-bin/vtservice|139ddac4f4c264c105dd8e1e0c658ef653faeb32
+# IMS - from TP1A.220624.014
+bin/vtservice|54d8895f106b7d8a1c3da70b9d3f91db63819b25
 etc/init/init.vtservice.rc|abcbc3ffc316b8f1cedffa949aac3b46670d64bc
-etc/permissions/com.mediatek.ims.plugin.xml|124a62116d61178e4a99253d33cccf27a7c0fc0a
-etc/permissions/com.mediatek.ims.rcsua.xml|930b5479cb59925eb88bb8e3daeedcaed9717b39
-etc/permissions/com.mediatek.wfo.legacy.xml|f11868e42fa8b425126e530bfa46ac3a5c9a3fdf
-etc/sysconfig/com.mediatek.ims.config.xml|d3c1494ddfdacdba205c16e94e6c9a5be197d4ec
-framework/CustomPropInterface.jar|37601e82ff9bb0e2b04490c2be187bcc724d993e
-framework/com.mediatek.ims.rcsua.jar|a43763f3308a9e8dce3915fe760b2b8a13ae3d86
-framework/mediatek-carrier-config-manager.jar|fe8486e617a6587587d7ece52d2ded4490416d8a
--framework/mediatek-common.jar|b4146fcb90fa1cc88b207e3ad4bd190791342c16
--framework/mediatek-framework.jar|2b69303d72414780e0f2075a7804d63068fa33a6
--framework/mediatek-ims-base.jar|5d96cf3ec0b7f5cc2a8c7a418427c724c2668186
--framework/mediatek-ims-common.jar|471e6051e9fa9b99cdb363c753bbd87f083254de
-framework/mediatek-ims-extension-plugin.jar|da8d84e89adb151561f5f3463132b07feced3052
--framework/mediatek-telecom-common.jar|88f0f8b1c360b1a911e2de2443da7ca18812ebe1
--framework/mediatek-telephony-base.jar|93606d884f6e12262acb53f868ae4657c5364ad9
--framework/mediatek-telephony-common.jar|29c4c3dffd90071f20dbbf03255136c76db19274
-framework/mediatek-wfo-legacy.jar|c53add92e223b76e4372f55525dc14e2a1ee2e3c
--lib64/libMiraVision_jni.so|08e155afdf473e8432520d0749a6d5c01f27bb6c
--lib64/libPQDCjni.so|877787de1c625e10f08bb603c233387cf72238c8
--lib64/libPQjni.so|1e976e2688de5f297efdee6dd63ab994b5b0f3e8
--lib64/libccci_util_sys.so|b7b2619aea78309a970c335eb7df98cb23b4f39f
--lib64/libcomutils.so|454be3958e2dc3a014a7cfa360e309ab5d3a1762
--lib64/libcustom_jni.so|b79da5931f5cb772c719d54a87a3d788d7c641ba
--lib64/libcustom_prop.so|a73e3b8f1debfd74b147b03809cc63adddd64bb8
--lib64/libimsma.so|999fcdddd9ce8ba367f4037bf415bb13b8c1b72a
--lib64/libimsma_adapt.so|38c844489fac85ea2fe921d259369522567350e7
--lib64/libimsma_rtp.so|0a029d6951edd6e1700628b3a9122be5ecf0c0ec
--lib64/libimsma_socketwrapper.so|6d01fdd2d68b51e511d42b7f84c8eb308d4ab1be
--lib64/libjni_pq.so|39842d51490fe72c95c36dbbed0768848f6a4f7d
--lib64/libmediatek_exceptionlog.so|707f54f176ed4fa847ee5c2c66dee51ad78b1f79
--lib64/libmtk_vt_service.so|542b34548f180c50f625967b2518eafc64b20d29
--lib64/libmtk_vt_wrapper.so|779f1003feaf33e3af30ebdf3989c73d20dcb166
--lib64/libnativecheck-jni.so|fa5ffc2d16ee6718d92f75d3bd547b9b85acb930
--lib64/libpowerhalwrap_jni.so|300ee5aaf4e9efcb71780f7b0a0252692b9112f4
--lib64/libsignal.so|689de287e713b1b0744a61f99c563f5bd8e7374f
--lib64/libsink.so|aac11f2a604c71d7f26041bfb487dc65bc13758c
--lib64/libsource.so|57d424a9534d3f2d0aa5eb925116ccacf23de198
--lib64/libsysenv_system.so|029aee8f552cadade3975f8641858c17fa4d8b54
--lib64/libvcodec_cap.so|df3ffa469a62da53165144063e226a7aadd203ba
--lib64/libvcodec_capenc.so|5f981214f184c32f03a609adf9073f31ded82d65
--lib64/libvsim-adaptor-client.so|2332f7632bb4cf20b99cfcda10a4cb8fb904e59d
--lib64/libvt_avsync.so|6593f835b38cef623d4d20aa5cd553904415b41d
--priv-app/AutoConfigService/AutoConfigService.apk|be8e74c48164100ad6c933ab052d981280ebd4e0
--priv-app/ImsService/ImsService.apk|5be0015c801f30deea76b78dc3d22636c25f5d6b
--priv-app/RcsStack/RcsStack.apk|bb53f2889803f91d1b66138f1d1cd587b3f0eca2
--priv-app/RcsUaService/RcsUaService.apk|f6117b7bbeec3f48e097245496b7be0e83f62d54
--system_ext/lib/libaudiotoolkit.so|4ba2a7dee37ac39e9e9a71685d0ba94b10af0d0c
--system_ext/lib64/libaudiotoolkit.so|17b6695b833a8745fcc34220c898afd1dfc62f85
--system_ext/priv-app/MtkCarrierConfig/MtkCarrierConfig.apk|14bfd84bfc6de4456e2b956a3bd1a85904376540
-
-# Interfaces - from android-13.0.0_r75
-system_ext/lib64/vendor.mediatek.hardware.engineermode@1.3.so|82d2e8674257243459f524e1f4c004cb1ce4217a
-system_ext/lib64/vendor.mediatek.hardware.imsa@1.0.so|8bb801540b008737bbe235296a6ddba90dfd5229
-system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so|e049eafe96a332ab708d15bcf2d3389759356dd2
-system_ext/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so|23c3a36b0b91ef1e9930d5a0a4a1bebe628fc7de
-system_ext/lib64/vendor.mediatek.hardware.netdagent@1.0.so|1b833743cad3f91a6c09300077badc9c534908e7
-system_ext/lib64/vendor.mediatek.hardware.omadm@1.0.so|6c4c52c46e5aa6b87ee5d6ad97d9fbc82299199a
-system_ext/lib64/vendor.mediatek.hardware.power@1.1.so|ed5b88e176b17fd79d292f68a217524ec3df9270
-system_ext/lib64/vendor.mediatek.hardware.power@2.1.so|887967236dac8df3028875eb9ec46fe4d49dc552
-system_ext/lib64/vendor.mediatek.hardware.pplagent@1.0.so|ffd37964adee88ef934e370784e7ae7b6dbd1cdd
-system_ext/lib64/vendor.mediatek.hardware.pq@2.15.so|d6b728f61f7afa431a509b810909628981ed0fe1
-system_ext/lib64/vendor.mediatek.hardware.radio_op@2.0.so|1027ee1713d1eb1a4cab26b9dfe6efb8090d8b0d
-system_ext/lib64/vendor.mediatek.hardware.radio_op@3.0.so|062e494932db719de91a3778d0d5728fde7682f5
-system_ext/lib64/vendor.mediatek.hardware.rcs@1.0.so|dce74c9a4d487f460c900f6220106fd1b1183ca0
-system_ext/lib64/vendor.mediatek.hardware.rcs@2.0.so|2960014dbab328de409e979a03769630fb27d8cb
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|fd5431b7f270c6e0083a0825571a705d87691dc6
-system_ext/lib64/vendor.mediatek.hardware.wfo@1.0.so|49fbc641af3c249b56a757a5d9f937e2e2c4f7fc
+-framework/mediatek-common.jar|3f3a53f685555d70798a791b8d9f4b4f53b43edd
+-framework/mediatek-framework.jar|4006876b00fba7a351b3ccc63a1cd15f0e8483b8
+-framework/mediatek-ims-base.jar|a49aadb3b9d5531ce93b00af05e6f2862e97d248
+-framework/mediatek-ims-common.jar|ac588b0707664a4dba3a82d49ee4e96efceadf6f
+-framework/mediatek-telecom-common.jar|090f5f0d67ffb1faf21af7465e52e698e63ed56d
+-framework/mediatek-telephony-base.jar|d4280b63508223e9df74b1317eaefb7e07e23e1d
+-framework/mediatek-telephony-common.jar|8489c29b30b8a9ef765352558d32bf2cedc67d46
+-framework/mediatek-ims-extension-plugin.jar|fbadb06fbf2762b181e15c88cbd7ae299a89be71
+-framework/mediatek-wfo-legacy.jar|e7932aef0d12968d5d5299e873e5cee545aa57d3
+lib/libmtk_vt_wrapper.so|1dddcf9604dc577208c4e7e3febdae471cbfc811
+lib/libmtkperf_client.so|aed7415394795f44ce56d5853fd4c0885f159210
+lib/libvcodec_cap.so|52a288cc229e9c0cb0c9b6c305810ca030a42fb2
+lib/libvcodec_capenc.so|e808be48e995a86681781d8cca91755d479b5277
+lib/libvsim-adaptor-client.so|47b6e38b840e1e9e24b29325d6fe50ea0fe7e2f0
+lib64/libcomutils.so|3d2dc456ff06350d393f66cae947fd7b00bbc9f5
+lib64/libimsma.so|7c9dab07fa0c70f9c05a917d94b8886f4bdce1dc
+lib64/libimsma_adapt.so|05740b8f153961cd93c7995bcae7aced317dcd88
+lib64/libimsma_rtp.so|319b6170e4475e5b689688f2f3d1a74a7e86637c
+lib64/libimsma_socketwrapper.so|0b5ba29140ce4533f6362c302bcd86c3497b074c
+lib64/libmtk_vt_service.so|671d47978a84ad4d3845d623fd7114dce5fe1fd5
+lib64/libmtk_vt_wrapper.so|13f514ecfe26fc106a238a6aaed1ee1078be9812
+lib64/libmtkperf_client.so|d82f686593d2df83383ae082421f58b911b9ca4e
+lib64/libsignal.so|43769d2c2718f0079ef8af264bdaf5d7f6afa96b
+lib64/libsink.so|0cbe05874cc19344199323c3db5ef9ad82588e95
+lib64/libsource.so|b8a4c644dba60f5292d99a18839231b2f00caec6
+lib64/libvcodec_cap.so|ee02bcc3cb05cc7167fa34c1c2f1338d627c63b1
+lib64/libvcodec_capenc.so|0e0524170b7936efae350cdf1daf30d64e0afc5a
+lib64/libvsim-adaptor-client.so|b80f0f646d2d73f5b83dbd98a19755e4c70f5f48
+lib64/libvt_avsync.so|d431afacd234f879871482078c47ba4d3090eaa5
+-priv-app/ImsService/ImsService.apk|3173d92bfe2f825ef6466d4dac8121025d93c3e0
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|f7b84d284ba6adad377806f45f3e2210ed05a881
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|07d99cfdf18e3a9f34bab3926f8714bc16172837
 
 # IMS (vendor)
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -1609,8 +1572,6 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
-lib/libmtkperf_client.so
-lib64/libmtkperf_client.so
 vendor/bin/eara_io_service
 vendor/bin/fpsgo
 vendor/bin/gbe

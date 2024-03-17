@@ -342,10 +342,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.rcsua.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.rcsua.service.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.rcs.provisioning.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.rcs.provisioning.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.engineermode.xml \
-	$(LOCAL_PATH)/configs/permissions/privapp-permissions-com.orangelabs.rcs.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.orangelabs.rcs.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.pri.factorytest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.pri.factorytest.xml
 
