@@ -1844,7 +1844,6 @@ vendor/thh/ta/isee_model.json|086bcb644a42ad345dcd52732a62c932c07bec2a
 # WiFi
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
-vendor/bin/hw/wpa_supplicant
 vendor/bin/netdagent
 vendor/bin/netdc
 vendor/bin/wfca
@@ -1852,7 +1851,6 @@ vendor/bin/wifimacaddr
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/init.connfem.rc
 vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wlan_drv.rc
@@ -1864,7 +1862,6 @@ vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
 vendor/etc/init/wifimacaddr.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml:vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.mtk.xml
 vendor/etc/wfd_source_capability.csv
 vendor/lib/libapmonitor_vendor.so
 vendor/lib/libconnfem.so
@@ -1892,4 +1889,3 @@ vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
-
