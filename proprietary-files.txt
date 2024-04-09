@@ -48,6 +48,10 @@ vendor/bin/rt5512_calibration
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/audio_param/AudioParamOptions_mgvi.xml
 vendor/etc/audio_param/AudioParamVersionInfo.txt
+vendor/etc/audio_param/CRSVolUI_AudioParam.xml
+vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml
+vendor/etc/audio_param/CRSVol_AudioParam.xml
+vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
@@ -85,6 +89,8 @@ vendor/lib/libvow_ap_test_dd.so
 vendor/lib/libvow_ap_test_ha.so
 vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
+vendor/lib/libcs_cs35l45_intf.so
+vendor/lib/libscltm.so
 vendor/lib/mt6789/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
 vendor/lib/mt6789/libpq_prot.so:vendor/lib/libpq_prot.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
@@ -125,6 +131,8 @@ vendor/lib64/libvow_ap_test_dd.so
 vendor/lib64/libvow_ap_test_ha.so
 vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
+vendor/lib64/libcs_cs35l45_intf.so
+vendor/lib64/libscltm.so
 vendor/lib64/mt6789/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
 vendor/lib64/mt6789/libpq_prot.so:vendor/lib64/libpq_prot.so
 vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
@@ -1434,6 +1442,10 @@ vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
+vendor/lib/AVCSecureVdecCA.so
+vendor/lib/HEVCSecureVdecCA.so
+vendor/lib/VP9SecureVdecCA.so
+vendor/lib/libAVCSecureVencCA.so
 vendor/lib/mt6789/libdpframework.so:vendor/lib/libdpframework.so
 vendor/lib/mt6789/libvcodec_utility.so:vendor/lib/libvcodec_utility.so
 vendor/lib/mt6789/libvcodec_utility_v3a.so:vendor/lib/libvcodec_utility_v3a.so
@@ -1473,6 +1485,10 @@ vendor/lib64/libthha.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvpu5.so
+vendor/lib64/AVCSecureVdecCA.so
+vendor/lib64/HEVCSecureVdecCA.so
+vendor/lib64/VP9SecureVdecCA.so
+vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/mt6789/libacdk.so:vendor/lib64/libacdk.so
 vendor/lib64/mt6789/libdpframework.so:vendor/lib64/libdpframework.so
 vendor/lib64/mt6789/libimageio.so:vendor/lib64/libimageio.so
@@ -1694,6 +1710,8 @@ vendor/lib64/libcrypto-md.so
 vendor/lib64/libcurl-md.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libgwsd-ril.so
+vendor/lib64/libgwsdv2-ril.so
+vendor/lib64/libgwsdv3-ril.so
 vendor/lib64/libhydra.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmmprofile.so
@@ -1868,3 +1886,4 @@ vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
+
