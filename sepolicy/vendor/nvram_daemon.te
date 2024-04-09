@@ -1,3 +1,4 @@
 get_prop(nvram_daemon, vendor_mtk_wmt_prop)
+get_prop(nvram_daemon, vendor_mtk_service_nvram_restore_prop)
 
 allow nvram_daemon proc_bootconfig:file r_file_perms;
