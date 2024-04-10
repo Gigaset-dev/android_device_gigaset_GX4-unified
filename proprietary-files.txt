@@ -735,12 +735,14 @@ lib/vendor.mediatek.hardware.pq@2.2.so
 lib/vendor.mediatek.hardware.pq@2.3.so
 lib/vendor.mediatek.hardware.pq@2.5.so
 lib/vendor.mediatek.hardware.pq@2.8.so
+lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
 lib64/vendor.mediatek.hardware.pq@2.0.so
 lib64/vendor.mediatek.hardware.pq@2.1.so
 lib64/vendor.mediatek.hardware.pq@2.2.so
 lib64/vendor.mediatek.hardware.pq@2.3.so
 lib64/vendor.mediatek.hardware.pq@2.5.so
 lib64/vendor.mediatek.hardware.pq@2.8.so
+lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
 system_ext/lib/vendor.mediatek.hardware.pq@2.10.so
 system_ext/lib/vendor.mediatek.hardware.pq@2.11.so
 system_ext/lib/vendor.mediatek.hardware.pq@2.12.so
