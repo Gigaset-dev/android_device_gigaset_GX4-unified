@@ -19,8 +19,10 @@ package com.volla.spotlight.Services;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.IBinder;
 import android.service.notification.NotificationListenerService;
@@ -49,7 +51,10 @@ public class NotificationService extends NotificationListenerService {
         if (DEBUG) Log.d(TAG, "Creating service");
 
         mAnimationManager = new AnimationManager(this);
-                
+
+        IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
+        registerReceiver(mDisplayMonitor, filter);
+
         super.onCreate();
     }
 
@@ -63,12 +68,24 @@ public class NotificationService extends NotificationListenerService {
     public void onDestroy() {
         if (DEBUG) Log.d(TAG, "Destroying service");
         super.onDestroy();
+        this.unregisterReceiver(mDisplayMonitor);
     }
 
     @Override
     public IBinder onBind(Intent intent) {
         return super.onBind(intent);
     }
+
+    private final BroadcastReceiver mDisplayMonitor = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (DEBUG) Log.i(TAG, "Screen on");
+            if (!mNotifications.isEmpty()) {
+                mNotifications.clear();
+                mAnimationManager.stopNotifications();
+            }
+        }
+    };
 
     @Override
     public void onNotificationPosted(StatusBarNotification sbn){
