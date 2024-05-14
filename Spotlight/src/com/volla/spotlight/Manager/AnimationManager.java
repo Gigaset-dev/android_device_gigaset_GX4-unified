@@ -215,6 +215,11 @@ public final class AnimationManager {
         StatusManager.setNotifLedsActive(true);
 
         submit(() -> {
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                Log.e(TAG, "Error while playing charging animation", e);
+            }
             if (check(Constants.SpotlightMode.NOTIFICATIONS))
                 mLEDManager.setLEDsBlink(true);
         });
