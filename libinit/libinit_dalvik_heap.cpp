@@ -16,8 +16,6 @@
 #define HEAPMAXFREE_PROP "dalvik.vm.heapmaxfree"
 #define HEAPTARGETUTILIZATION_PROP "dalvik.vm.heaptargetutilization"
 
-#define GB(b) (b * 1024ull * 1024 * 1024)
-
 static const dalvik_heap_info_t dalvik_heap_info_6144 = {
     .heapstartsize = "16m",
     .heapgrowthlimit = "256m",
