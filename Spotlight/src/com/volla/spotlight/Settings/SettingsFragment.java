@@ -28,16 +28,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
 import android.widget.Switch;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SeekBarPreference;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.settingslib.widget.MainSwitchPreference;
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import com.volla.spotlight.Manager.AnimationManager;
 import com.volla.spotlight.Manager.LEDManager;
@@ -48,7 +49,7 @@ import com.volla.spotlight.Services.NotificationService;
 import com.volla.spotlight.Utils.ServiceUtils;
 
 public class SettingsFragment extends PreferenceFragment implements OnPreferenceChangeListener,
-        OnMainSwitchChangeListener {
+        OnCheckedChangeListener {
 
     /** Hidden field Settings.Secure.ENABLED_NOTIFICATION_LISTENERS */
     private static final String NOTIFICATION_ENABLED_LISTENERS = "enabled_notification_listeners";
@@ -56,11 +57,11 @@ public class SettingsFragment extends PreferenceFragment implements OnPreference
     private MainSwitchPreference mSwitchBar;
 
     private SeekBarPreference mBrightnessPreference;
-    private SwitchPreference mNotifsPreference;
-    private SwitchPreference mCallPreference;
-    private SwitchPreference mChargingLevelPreference;
-    private SwitchPreference mFlashlightPreference;
-    private SwitchPreference mMusicPreference;
+    private SwitchPreferenceCompat mNotifsPreference;
+    private SwitchPreferenceCompat mCallPreference;
+    private SwitchPreferenceCompat mChargingLevelPreference;
+    private SwitchPreferenceCompat mFlashlightPreference;
+    private SwitchPreferenceCompat mMusicPreference;
 
     private ContentResolver mContentResolver;
     private SettingObserver mSettingObserver;
@@ -84,31 +85,31 @@ public class SettingsFragment extends PreferenceFragment implements OnPreference
         mSwitchBar.addOnSwitchChangeListener(this);
         mSwitchBar.setChecked(spotlightEnabled);
 
-        mBrightnessPreference = (SeekBarPreference) findPreference(Constants.SPOTLIGHT_BRIGHTNESS);
+        mBrightnessPreference = findPreference(Constants.SPOTLIGHT_BRIGHTNESS);
         mBrightnessPreference.setEnabled(spotlightEnabled);
         mBrightnessPreference.setMin(1);
         mBrightnessPreference.setMax(100);
         mBrightnessPreference.setUpdatesContinuously(true);
         mBrightnessPreference.setOnPreferenceChangeListener(this);
 
-        mNotifsPreference = (SwitchPreference) findPreference(Constants.SPOTLIGHT_NOTIFS_ENABLE);
+        mNotifsPreference = findPreference(Constants.SPOTLIGHT_NOTIFS_ENABLE);
         mNotifsPreference.setChecked(SettingsManager.isSpotlightNotifsEnabled(getActivity()));
         mNotifsPreference.setEnabled(spotlightEnabled);
         mNotifsPreference.setOnPreferenceChangeListener(this);
 
-        mCallPreference = (SwitchPreference) findPreference(Constants.SPOTLIGHT_CALL_ENABLE);
+        mCallPreference = findPreference(Constants.SPOTLIGHT_CALL_ENABLE);
         mCallPreference.setEnabled(spotlightEnabled);
         mCallPreference.setOnPreferenceChangeListener(this);
 
-        mChargingLevelPreference = (SwitchPreference) findPreference(Constants.SPOTLIGHT_CHARGING_LEVEL_ENABLE);
+        mChargingLevelPreference = findPreference(Constants.SPOTLIGHT_CHARGING_LEVEL_ENABLE);
         mChargingLevelPreference.setEnabled(spotlightEnabled);
         mChargingLevelPreference.setOnPreferenceChangeListener(this);
 
-        mFlashlightPreference = (SwitchPreference) findPreference(Constants.SPOTLIGHT_FLASHLIGHT_ENABLE);
+        mFlashlightPreference = findPreference(Constants.SPOTLIGHT_FLASHLIGHT_ENABLE);
         mFlashlightPreference.setEnabled(spotlightEnabled);
         mFlashlightPreference.setOnPreferenceChangeListener(this);
 
-        mMusicPreference = (SwitchPreference) findPreference(Constants.SPOTLIGHT_MUSIC_ENABLE);
+        mMusicPreference = findPreference(Constants.SPOTLIGHT_MUSIC_ENABLE);
         mMusicPreference.setEnabled(spotlightEnabled);
         mMusicPreference.setOnPreferenceChangeListener(this);
     }
@@ -170,7 +171,7 @@ public class SettingsFragment extends PreferenceFragment implements OnPreference
     }
 
     @Override
-    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         SettingsManager.enableSpotlight(getActivity(), isChecked);
         ServiceUtils.checkSpotlightService(getActivity());
 

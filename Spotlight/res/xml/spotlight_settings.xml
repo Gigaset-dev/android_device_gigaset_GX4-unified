@@ -31,32 +31,32 @@
         android:defaultValue="100"
         android:title="@string/spotlight_settings_brightness" />
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="spotlight_settings_call_toggle"
         android:defaultValue="true"
         android:title="@string/spotlight_settings_call_toggle_title"
         android:summary="@string/spotlight_settings_call_toggle_summary" />
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="spotlight_settings_notifs_toggle"
         android:defaultValue="false"
         android:title="@string/spotlight_settings_notifs_toggle_title"
         android:summary="@string/spotlight_settings_notifs_toggle_summary" >
-    </SwitchPreference>
+    </SwitchPreferenceCompat>
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="spotlight_settings_charging_level"
         android:defaultValue="true"
         android:title="@string/spotlight_settings_charging_level_title"
         android:summary="@string/spotlight_settings_charging_level_summary" />
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="spotlight_settings_flashlight_toggle"
         android:defaultValue="true"
         android:title="@string/spotlight_settings_flashlight_toggle_title"
         android:summary="@string/spotlight_settings_flashlight_toggle_summary" />
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="spotlight_settings_music_toggle"
         android:defaultValue="true"
         android:title="@string/spotlight_settings_music_toggle_title"
