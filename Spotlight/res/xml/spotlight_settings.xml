@@ -29,6 +29,7 @@
         android:key="spotlight_settings_brightness"
         android:max="100"
         android:defaultValue="100"
+        android:selectable="false"
         android:title="@string/spotlight_settings_brightness" />
 
     <SwitchPreferenceCompat
