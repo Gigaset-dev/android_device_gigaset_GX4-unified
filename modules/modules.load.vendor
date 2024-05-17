@@ -104,7 +104,6 @@ cmdq-sec-drv.ko
 mtk-dvfsrc-start.ko
 cpudvfs.ko
 mtk_fpsgo.ko
-fpsgo.ko
 mtk_perf_ioctl.ko
 sspm_v3.ko
 mainaf.ko
