@@ -15,6 +15,9 @@
 
 android_app {
     name: "SpotlightRing",
+    defaults: [
+        "SettingsLibDefaults",
+    ],
     certificate: "platform",
     srcs: ["src/**/*.java"],
     platform_apis: true,
@@ -23,7 +26,6 @@ android_app {
     static_libs: [
         "androidx.core_core",
         "androidx.preference_preference",
-        "SettingsLib",
         "volla_spotlight_sdk",
     ],
     required: [
