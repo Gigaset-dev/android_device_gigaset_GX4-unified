@@ -23,6 +23,8 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.util.Pair;
 
+import com.android.settingslib.R;
+
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
 import com.airbnb.lottie.model.KeyPath;
@@ -30,8 +32,6 @@ import com.airbnb.lottie.value.LottieFrameInfo;
 import com.airbnb.lottie.value.SimpleLottieValueCallback;
 
 import java.util.HashMap;
-
-import com.android.settingslib.R;
 
 /**
  * ColorUtils is a util class which help the lottie illustration

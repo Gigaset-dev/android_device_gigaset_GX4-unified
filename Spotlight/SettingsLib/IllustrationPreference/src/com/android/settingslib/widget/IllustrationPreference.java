@@ -42,7 +42,6 @@ import com.airbnb.lottie.LottieDrawable;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-
 import com.android.settingslib.R;
 
 /**
@@ -57,10 +56,25 @@ public class IllustrationPreference extends Preference {
 
     private int mMaxHeight = SIZE_UNSPECIFIED;
     private int mImageResId;
+    private boolean mCacheComposition = true;
     private boolean mIsAutoScale;
     private Uri mImageUri;
     private Drawable mImageDrawable;
     private View mMiddleGroundView;
+    private OnBindListener mOnBindListener;
+
+    private boolean mLottieDynamicColor;
+
+    /**
+     * Interface to listen in on when {@link #onBindViewHolder(PreferenceViewHolder)} occurs.
+     */
+    public interface OnBindListener {
+        /**
+         * Called when when {@link #onBindViewHolder(PreferenceViewHolder)} occurs.
+         * @param animationView the animation view for this preference.
+         */
+        void onBind(LottieAnimationView animationView);
+    }
 
     private final Animatable2.AnimationCallback mAnimationCallback =
             new Animatable2.AnimationCallback() {
@@ -121,7 +135,8 @@ public class IllustrationPreference extends Preference {
         lp.width = screenWidth < screenHeight ? screenWidth : screenHeight;
         illustrationFrame.setLayoutParams(lp);
 
-        handleImageWithAnimation(illustrationView);
+        illustrationView.setCacheComposition(mCacheComposition);
+        handleImageWithAnimation(illustrationFrame, illustrationView);
         handleImageFrameMaxHeight(backgroundView, illustrationView);
 
         if (mIsAutoScale) {
@@ -135,6 +150,21 @@ public class IllustrationPreference extends Preference {
         if (IS_ENABLED_LOTTIE_ADAPTIVE_COLOR) {
             ColorUtils.applyDynamicColors(getContext(), illustrationView);
         }
+
+        if (mLottieDynamicColor) {
+            LottieColorUtils.applyDynamicColors(getContext(), illustrationView);
+        }
+
+        if (mOnBindListener != null) {
+            mOnBindListener.onBind(illustrationView);
+        }
+    }
+
+    /**
+     * Sets a listener to be notified when the views are binded.
+     */
+    public void setOnBindListener(OnBindListener listener) {
+        mOnBindListener = listener;
     }
 
     /**
@@ -241,6 +271,21 @@ public class IllustrationPreference extends Preference {
         }
     }
 
+    /**
+     * Sets the lottie illustration apply dynamic color.
+     */
+    public void applyDynamicColor() {
+        mLottieDynamicColor = true;
+        notifyChanged();
+    }
+
+    /**
+     * Return if the lottie illustration apply dynamic color or not.
+     */
+    public boolean isApplyDynamicColor() {
+        return mLottieDynamicColor;
+    }
+
     private void resetImageResourceCache() {
         mImageDrawable = null;
         mImageUri = null;
@@ -258,7 +303,8 @@ public class IllustrationPreference extends Preference {
         }
     }
 
-    private void handleImageWithAnimation(LottieAnimationView illustrationView) {
+    private void handleImageWithAnimation(FrameLayout illustrationFrame,
+            LottieAnimationView illustrationView) {
         if (mImageDrawable != null) {
             resetAnimations(illustrationView);
             illustrationView.setImageDrawable(mImageDrawable);
@@ -277,7 +323,7 @@ public class IllustrationPreference extends Preference {
             } else {
                 // The lottie image from the raw folder also returns null because the ImageView
                 // couldn't handle it now.
-                startLottieAnimationWith(illustrationView, mImageUri);
+                startLottieAnimationWith(illustrationFrame, illustrationView, mImageUri);
             }
         }
 
@@ -290,7 +336,7 @@ public class IllustrationPreference extends Preference {
             } else {
                 // The lottie image from the raw folder also returns null because the ImageView
                 // couldn't handle it now.
-                startLottieAnimationWith(illustrationView, mImageResId);
+                startLottieAnimationWith(illustrationFrame, illustrationView, mImageResId);
             }
         }
     }
@@ -328,21 +374,27 @@ public class IllustrationPreference extends Preference {
         ((Animatable) drawable).start();
     }
 
-    private static void startLottieAnimationWith(LottieAnimationView illustrationView,
-            Uri imageUri) {
+    private static void startLottieAnimationWith(FrameLayout illustrationFrame,
+            LottieAnimationView illustrationView, Uri imageUri) {
         final InputStream inputStream =
                 getInputStreamFromUri(illustrationView.getContext(), imageUri);
-        illustrationView.setFailureListener(
-                result -> Log.w(TAG, "Invalid illustration image uri: " + imageUri, result));
+        illustrationFrame.setVisibility(View.VISIBLE);
+        illustrationView.setFailureListener(result -> {
+            Log.w(TAG, "Invalid illustration image uri: " + imageUri, result);
+            illustrationFrame.setVisibility(View.GONE);
+        });
         illustrationView.setAnimation(inputStream, /* cacheKey= */ null);
         illustrationView.setRepeatCount(LottieDrawable.INFINITE);
         illustrationView.playAnimation();
     }
 
-    private static void startLottieAnimationWith(LottieAnimationView illustrationView,
-            @RawRes int rawRes) {
-        illustrationView.setFailureListener(
-                result -> Log.w(TAG, "Invalid illustration resource id: " + rawRes, result));
+    private static void startLottieAnimationWith(FrameLayout illustrationFrame,
+            LottieAnimationView illustrationView, @RawRes int rawRes) {
+        illustrationFrame.setVisibility(View.VISIBLE);
+        illustrationView.setFailureListener(result -> {
+            Log.w(TAG, "Invalid illustration resource id: " + rawRes, result);
+            illustrationFrame.setVisibility(View.GONE);
+        });
         illustrationView.setAnimation(rawRes);
         illustrationView.setRepeatCount(LottieDrawable.INFINITE);
         illustrationView.playAnimation();
@@ -382,9 +434,17 @@ public class IllustrationPreference extends Preference {
 
         mIsAutoScale = false;
         if (attrs != null) {
-            final TypedArray a = context.obtainStyledAttributes(attrs,
+            TypedArray a = context.obtainStyledAttributes(attrs,
                     com.airbnb.lottie.R.styleable.LottieAnimationView, 0 /*defStyleAttr*/, 0 /*defStyleRes*/);
             mImageResId = a.getResourceId(com.airbnb.lottie.R.styleable.LottieAnimationView_lottie_rawRes, 0);
+            mCacheComposition = a.getBoolean(
+                    com.airbnb.lottie.R.styleable.LottieAnimationView_lottie_cacheComposition, true);
+
+            a = context.obtainStyledAttributes(attrs,
+                    R.styleable.IllustrationPreference, 0 /*defStyleAttr*/, 0 /*defStyleRes*/);
+            mLottieDynamicColor = a.getBoolean(R.styleable.IllustrationPreference_dynamicColor,
+                    false);
+
             a.recycle();
         }
     }

@@ -18,6 +18,4 @@
 <resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
     <color name="settingslib_switchbar_switch_track_tint">#BFFFFFFF</color>
     <color name="settingslib_switchbar_switch_thumb_tint">@android:color/white</color>
-
-    <color name="material_grey_600">#ff757575</color>
 </resources>

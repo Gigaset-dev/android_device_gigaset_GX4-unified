@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2021 The Android Open Source Project
+  Copyright (C) 2023 The Android Open Source Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -13,11 +13,15 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
+-->
 
-<resources>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:width="52dp"
+    android:height="28dp">
 
-    <!-- SwitchBar sub settings margin start / end -->
-    <dimen name="settingslib_switchbar_subsettings_margin_start">80dp</dimen>
-    <dimen name="settingslib_switchbar_subsettings_margin_end">80dp</dimen>
-</resources>
+    <solid android:color="@color/settingslib_switch_track_color" />
+    <corners android:radius="35dp" />
+    <stroke android:width="2dp" android:color="@color/settingslib_track_online_color"/>
+</shape>

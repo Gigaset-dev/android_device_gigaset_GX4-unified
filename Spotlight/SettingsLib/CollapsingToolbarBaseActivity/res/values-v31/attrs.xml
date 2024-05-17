@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2021 The Android Open Source Project
+  Copyright (C) 2022 The Android Open Source Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -13,11 +13,11 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
-
+-->
 <resources>
-
-    <!-- SwitchBar sub settings margin start / end -->
-    <dimen name="settingslib_switchbar_subsettings_margin_start">128dp</dimen>
-    <dimen name="settingslib_switchbar_subsettings_margin_end">128dp</dimen>
+    <declare-styleable name="CollapsingCoordinatorLayout">
+        <!-- assign a title of collapsing toolbar title. -->
+        <attr name="collapsing_toolbar_title" format="string" />
+        <attr name="content_frame_height_match_parent" format="boolean" />
+    </declare-styleable>
 </resources>

@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath 'com.android.tools.build:gradle:8.1.1'
     }
 }
 
@@ -16,11 +16,12 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 32
+    compileSdk 34
+    namespace 'com.volla.spotlight'
 
     defaultConfig {
-        minSdkVersion 32
-        targetSdkVersion 32
+        minSdkVersion 34
+        targetSdkVersion 34
     }
 
 
@@ -51,8 +52,10 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'androidx.preference:preference:1.1.0'
+    compileOnly fileTree(dir: 'system_libs/', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.preference:preference:1.2.1'
 
     implementation project(path: ':SettingsLib')
     implementation project(path: ':SpotlightSDK')
