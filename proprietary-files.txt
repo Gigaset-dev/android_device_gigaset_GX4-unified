@@ -42,7 +42,6 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 # Audio
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
-vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
 vendor/etc/AudioLog_dynamic.xml
@@ -52,7 +51,6 @@ vendor/etc/audio_param/CRSVolUI_AudioParam.xml
 vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml
 vendor/etc/audio_param/CRSVol_AudioParam.xml
 vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml
-vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so

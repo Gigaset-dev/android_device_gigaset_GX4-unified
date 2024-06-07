@@ -1,0 +1,2 @@
+allow hal_audio_default persist_data_file:dir search;
+get_prop(hal_audio_default, vendor_mtk_wmt_prop)
