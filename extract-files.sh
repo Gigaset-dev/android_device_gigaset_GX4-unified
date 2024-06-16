@@ -55,6 +55,9 @@ done
 
 function blob_fixup {
     case "$1" in
+        system_ext/lib64/libsource.so)
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
         vendor/lib64/libwifi-hal-mtk.so)
             "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
             ;;
