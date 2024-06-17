@@ -34,5 +34,17 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 append_firmware_calls_to_makefiles "${MY_DIR}/proprietary-firmware.txt"
 
+sed -i "/TARGET_DEVICE/d" "$ANDROIDMK"
+sed -i "/add-radio-file/d" "$ANDROIDMK"
+
+cat << EOF >> "$ANDROIDMK"
+ifneq (\$(filter GX4 vidofnir,\$(TARGET_DEVICE)),)
+
+RADIO_FILES := \$(wildcard \$(LOCAL_PATH)/radio/\$(TARGET_DEVICE)/*)
+\$(foreach f, \$(notdir \$(RADIO_FILES)), \\
+    \$(call add-radio-file,radio/\$(TARGET_DEVICE)/\$(f)))
+
+EOF
+
 # Finish
 write_footers
