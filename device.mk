@@ -438,6 +438,10 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    android.hardware.memtrack-V1-ndk.vendor \
+    liblzma.vendor \
+    libutilscallstack.vendor \
+    libunwindstack.vendor \
     libutils-v32
 
 # Wi-Fi
