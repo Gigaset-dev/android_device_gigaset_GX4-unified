@@ -1,5 +1,7 @@
 mkp.ko
 bootprof.ko
+leds_aw210xx.ko
+leds-aw2016.ko
 dbgtop-drm.ko
 mrdump.ko
 mtk_disp_notify.ko
@@ -59,14 +61,13 @@ cmdq-platform-mt6789.ko
 cmdq_helper_inf.ko
 mtk-mml.ko
 mtk_panel_ext.ko
-panel-alpha-jdi-nt36672e-vdo-120hz-hfp.ko
+panel-alpha-jdi-nt36672e-vdo-60hz.ko
+panel-alpha-jdi-nt36672e-vdo-60hz-qcg.ko
 panel-truly-td4330-cmd.ko
-panel-truly-td4330-vdo.ko
 panel-samsung-ana6705-cmd-fhdp.ko
 panel-alpha-jdi-nt36672e-cphy-vdo.ko
-panel-alpha-jdi-nt36672e-vdo-60hz.ko
+panel-tianma-r66451-cmd-120hz.ko
 mediatek-drm.ko
-sm5602_fg.ko
 aee_rs.ko
 mmprofile.ko
 mtk-uart-apdma.ko
@@ -79,7 +80,6 @@ musb_main.ko
 mtk-pmic-wrap.ko
 mt635x-auxadc.ko
 mt6397.ko
-sc89601a_charger.ko
 mt63xx-debug.ko
 mtk-spmi-pmic.ko
 spmi-mtk-pmif.ko
@@ -101,6 +101,8 @@ mtk-kpd.ko
 regulator-vibrator.ko
 i2c-mt65xx.ko
 rtc-mt6397.ko
+sc8551.ko
+sc89601a_charger.ko
 mt6789_dcm.ko
 mtk_dcm.ko
 clk-chk-mt6789.ko
@@ -137,6 +139,7 @@ rt4831a_drv.ko
 extcon-mtk-usb.ko
 tcpci_late_sync.ko
 mt6577_auxadc.ko
+cache-parity.ko
 mtk_battery_oc_throttling.ko
 mtk_low_battery_throttling.ko
 pmic_lbat_service.ko
@@ -160,11 +163,9 @@ mtk-socinfo.ko
 mtk_rpmsg_mbox.ko
 mtk-mbox.ko
 mtk_tinysys_ipi.ko
+sm5602_fg.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
 sec.ko
 uload_ind.ko
 load_track.ko
-sc8551.ko
-leds-aw2016.ko
-leds_aw210xx.ko

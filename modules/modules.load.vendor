@@ -7,6 +7,7 @@ mtk-swpm-dbg-v6789.ko
 mtk-vow.ko
 mtk-scp-vow.ko
 mdp_drv_mt6789.ko
+mt63xx-oc-debug.ko
 clk-dbg-mt6789.ko
 mtk-ssc.ko
 mtk-ssc-dbg-v2.ko
@@ -27,7 +28,6 @@ c2k_usb_f_via_modem.ko
 c2k_usb_f_via_pcv.ko
 asix.ko
 ax88179_178a.ko
-r8152.ko
 mtk_u_ether.ko
 mtk_usb_f_rndis.ko
 rps_perf.ko
@@ -66,6 +66,7 @@ audio_ipi.ko
 snd-soc-audiodsp-common.ko
 mtk-scp-audiocommon.ko
 mtk-scp-audio.ko
+snd-soc-rt5512.ko
 richtek_spm_cls.ko
 snd-soc-tfa98xx.ko
 mtk-sp-spk-amp.ko
@@ -111,6 +112,7 @@ main2af.ko
 main3af.ko
 subaf.ko
 sub2af.ko
+focaltech_fp.ko
 mtk-composite.ko
 lm3643.ko
 flashlight.ko
@@ -130,6 +132,7 @@ fhctl.ko
 scp.ko
 hf_manager.ko
 sensorhub.ko
+smartpa.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
 imgsensor_isp6s.ko
@@ -156,5 +159,3 @@ task_turbo.ko
 pmsr.ko
 spmtwam.ko
 mtk_disp_sec.ko
-smartpa.ko
-focaltech_fp.ko
