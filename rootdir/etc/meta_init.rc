@@ -277,6 +277,10 @@ on property:vendor.crypto.fake_encrypt=1 && property:vold.post_fs_data_done=1
     class_start late_start
     start mount_all_storages
 
+#drv add by xudongfang for rkp, 20230307 start
+on property:ro.rkp.chmod=1
+	chmod 0644 /data/vendor_de/meta/prod_build_csr.json
+#drv add by xudongfang for rkp, 20230307 end
 
 #Log too much setting
 on property:ro.vendor.mtklog_internal=1

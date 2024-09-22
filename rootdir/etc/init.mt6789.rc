@@ -66,6 +66,7 @@ on init
     # prize added by xuzerui, add charge_limit, 20200424-start
      chmod 0666 /sys/class/cmd_charge_disable/cmd_charge_disable
 	 chmod 0666 /sys/class/smartcover/state
+	 chmod 0666 /sys/devices/platform/common_node/gesture
     # prize added by xuzerui, add charge_limit, 20200424-end
 	
 
@@ -111,6 +112,9 @@ on charger
     chown system system /sys/class/leds/red/brightness
     chown system system /sys/class/leds/green/brightness
 
+       #prize hjw for blue start
+       chown system system /sys/class/leds/blue/brightness
+       #prize hjw for blue end
     start vendor.light
 
     # Stop bootprof
@@ -179,10 +183,16 @@ on post-fs
 
     chown system system /mnt/vendor/protect_f
     chmod 0770 /mnt/vendor/protect_f
-	chmod 0666 /dev/focaltech_fp
+	#drv  huangjiwu for   aw22xxx_led  start
+    chmod 0666 /sys/class/aw22xxx_led/effect
+	chown system system /sys/class/aw22xxx_led/effect
+	#drv  huangjiwu for   aw22xxx_led  end
+	#prize add by dengzhiyuan 20230727 start
 	chmod 0666 /sys/class/aw210xx_led/effect
-
-
+	#prize add by dengzhiyuan 20230727 end
+    #prize add by dengbinggui for fingerprint 20230802 start
+    chmod 0666 /dev/focaltech_fp
+    #prize add by dengbinggui for fingerprint 20230802 end
     chown system system /mnt/vendor/protect_s
     chmod 0770 /mnt/vendor/protect_s
     chown root log /proc/ccci_sib
@@ -742,6 +752,32 @@ on post-fs-data
 	chmod 0660 /dev/drm_wv
 	chown media system /dev/drm_wv
 	
+	 #prize add by liutuo for linear-motor start
+    chown system system /sys/class/leds/vibrator/index
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/loop
+    chown system system /sys/class/leds/vibrator/brightness
+
+    chmod 0666 /sys/class/leds/vibrator/index
+    chmod 0666 /sys/class/leds/vibrator/duration
+    chmod 0666 /sys/class/leds/vibrator/activate
+    chmod 0666 /sys/class/leds/vibrator/loop
+    chmod 0666 /sys/class/leds/vibrator/brightness
+
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/index
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/loop
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/activate
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/brightness
+    chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/duration
+
+    chmod 0664 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/index
+    chmod 0664 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/loop
+    chmod 0664 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/activate
+    chmod 0664 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/brightness
+    chmod 0664 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-005a/leds/vibrator/duration
+    #prize add by liutuo gor linear-motor end
+	
 # End of adding by MTK drivers
 # -----------------------
 on zygote-start
@@ -785,18 +821,21 @@ on boot
     chown system system /sys/class/leds/red/trigger
     chown system system /sys/class/leds/green/trigger
     chown system system /sys/class/leds/blue/trigger
-#prize add by lipengpeng 20220823 start 
-	chown system system /sys/class/leds/red/led_time
+#prize add by lipengpeng 20220823 start
+       chown system system /sys/class/leds/red/led_time
     chown system system /sys/class/leds/green/led_time
     chown system system /sys/class/leds/blue/led_time
-#prize add by lipengpeng 20220823 end
-
     chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/singleled
     chmod 0660 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/singleled
     chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/effect
     chmod 0660 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/effect
     chown system system /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/hwen
     chmod 0660 /sys/devices/platform/soc/11eb3000.i2c/i2c-9/9-0020/leds/aw210xx_led/hwen
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/green/brightness
+	chown system system /sys/class/leds/blue/brightness
+	chown system system /sys/hall_state/hall_status
+#prize add by lipengpeng 20220823 end 
 
     # gauge symbolic
     symlink /sys/devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge /dev/gauge

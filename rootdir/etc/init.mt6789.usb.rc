@@ -701,6 +701,8 @@ on property:sys.usb.config=acm_gs0gs1
     setprop sys.usb.config ${sys.usb.state}
     setprop vendor.usb.acm_idx "1,2"
 
+on property:persist.vendor.radio.port_index=1,4 && property:sys.boot_completed=1
+    setprop sys.usb.config acm_gs0gs3
 on property:sys.usb.config=gs3,dual_acm
     setprop sys.usb.config acm_gs0gs3
 on property:sys.usb.config=mtp,gs3,dual_acm
@@ -933,5 +935,8 @@ on property:vendor.usb.testmode=3
 	write /proc/mtk_usb/xhci0/testmode "test K"
 on property:vendor.usb.testmode=4
 	write /proc/mtk_usb/xhci0/testmode "test packet"
+
+on property:vendor.usb.device.wakeup=*
+	write ${vendor.usb.device.wakeup} "enabled"
 
 ### PLATFORM VARIANT, cat $rc_file | grep write | sort | grep -vE "android0|usb20_phy" | awk '{print $2}' | uniq ###
