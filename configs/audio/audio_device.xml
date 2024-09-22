@@ -994,6 +994,7 @@
             <kctl name="ADC R Mux" value="Idle" />
             <kctl name="PGA L Mux" value="None" />
             <kctl name="PGA R Mux" value="None" />
+            <kctl name="usb_call_echo_ref" value="0" />
         </path>
         <path name="MD1_TO_CAPTURE2" value="turnon">
             <kctl name="UL2_CH1 PCM_2_CAP_CH1" value="1" />
