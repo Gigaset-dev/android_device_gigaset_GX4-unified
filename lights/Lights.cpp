@@ -91,6 +91,8 @@ Lights::Lights() {
         int id = pair.first;
         HwLight hwLight{};
         hwLight.id = id;
+        hwLight.type = static_cast<LightType>(id);
+        hwLight.ordinal = 0;
         availableLights.emplace_back(hwLight);
     }
     mAvailableLights = availableLights;
