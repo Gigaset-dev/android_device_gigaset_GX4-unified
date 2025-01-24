@@ -292,7 +292,7 @@ public final class AnimationManager {
         }
 
         mVisualizer.setEnabled(false);
-        mVisualizer.setCaptureSize(66);
+        mVisualizer.setCaptureSize(Visualizer.getCaptureSizeRange()[0]);
         mVisualizer.setDataCaptureListener(mVisualizerListener, Visualizer.getMaxCaptureRate(),
                 false, true);
         mVisualizer.setEnabled(true);
