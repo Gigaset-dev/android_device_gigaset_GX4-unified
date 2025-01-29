@@ -4,17 +4,18 @@
 # This is a common source of Android security bugs.
 #
 
-# I am S system meta_init.system.rc w2207
+# I am T system meta_init.system.rc w2207
 
 import /system_ext/etc/init/hw/vendor_init_as_system.rc
 import /init.environ.rc
 import /system_ext/etc/init/hw/init.aee.rc
+
 #copy from system/etc for APEX
 import /system/etc/init/apexd.rc
 import /system/etc/init/art_apex_boot_integrity.rc
 import /system/etc/init/vold.rc
 import /system/etc/init/servicemanager.rc
-import /system/etc/init/hwservicemanager.rc
+import /system_ext/etc/init/hwservicemanager.rc
 import /system/etc/init/android.hidl.allocator@1.0-service.rc
 
 #phase out multi_init.rc, move related system rc to here.
@@ -25,10 +26,12 @@ import /system/etc/init/logd.rc
 import /system/etc/init/logd_e.rc
 import /system/etc/init/logcatd.rc
 import /system/etc/init/storagemanagerd.rc
-import /system/etc/init/mobile_log_d.rc
-import /system/etc/init/android.system.suspend@1.0-service.rc
+import /system_ext/etc/init/mobile_log_d.rc
+import /system/etc/init/android.system.suspend-service.rc
 import /system/etc/init/wait_for_keymaster.rc
 import /system/etc/init/keystore2.rc
+import /system_ext/etc/init/emdlogger.rc
+
 #end
 
 import /vendor/etc/init/hw/meta_init.vendor.rc
@@ -70,14 +73,12 @@ on early-init
     update_linker_config
 
 on init
-
     sysclktz 0
 
     # Mix device-specific information into the entropy pool
     copy /proc/cmdline /dev/urandom
     copy /default.prop /dev/urandom
 
-   
     # Mount cgroup mount point for cpu accounting
     mount cgroup none /acct cpuacct
     mkdir /acct/uid
@@ -202,6 +203,7 @@ on init
     write /proc/sys/net/ipv4/tcp_fwmark_accept 1
 
 
+    mount bpf bpf /sys/fs/bpf nodev noexec nosuid
     # enable armv8_deprecated instruction hooks
     write /proc/sys/abi/swp 1
     # Linux's execveat() syscall may construct paths containing /dev/fd
@@ -213,7 +215,6 @@ on init
     start logd
     start servicemanager
     start hwservicemanager
-		
 
 # Healthd can trigger a full boot from charger mode by signaling this
 # property when the power button is held.
@@ -268,15 +269,12 @@ on late-init
     trigger early-boot
     trigger boot
 
-on early-fs
+ on early-fs
     # Once metadata has been mounted, we'll need vold to deal with userdata checkpointing
    start vold
 
-
 on post-fs
-
     start system_suspend
-
     # Once everything is setup, no need to modify /.
     # The bind+ro combination avoids modifying any other mount flags.
     # mount rootfs rootfs / remount bind ro
@@ -334,7 +332,6 @@ on zygote-start && property:ro.crypto.state=encrypted && property:ro.crypto.type
     start zygote
     start zygote_secondary
 
-
 on boot
 
 # basic network init
@@ -352,45 +349,11 @@ on nonencrypted
     class_start main
     class_start late_start
 
-on property:vold.decrypt=trigger_reset_main
-    class_reset main
-
-on property:vold.decrypt=trigger_load_persist_props
-    load_persist_props
-    start logd
-    start logd-reinit
-
-    # avoid no log in meta mode due to logd-reinit
-    # stop keyinstall-1-0
-    # start keyinstall-1-0
-
-on property:vold.decrypt=trigger_post_fs_data
-    trigger post-fs-data
-    trigger zygote-start
-
-on property:vold.decrypt=trigger_restart_min_framework
-    # A/B update verifier that marks a successful boot.
-    exec_start update_verifier
-    class_start main
-
-on property:vold.decrypt=trigger_restart_framework
-    stop surfaceflinger
-    start surfaceflinger
-    # A/B update verifier that marks a successful boot.
-    exec_start update_verifier
-    class_start main
-    class_start late_start
-
-on property:vold.decrypt=trigger_shutdown_framework
-    class_reset late_start
-    class_reset main
-
 # One shot invocation to deal with encrypted volume.
 on defaultcrypto
     exec - root -- /system/bin/vdc --wait cryptfs mountdefaultencrypted
     # vold will set vold.decrypt to trigger_restart_framework (default
     # encryption) or trigger_restart_min_framework (other encryption)
-
 
 
 ## Daemon processes to be run by init.
@@ -399,6 +362,8 @@ service ueventd /system/bin/ueventd
     class core
     critical
     seclabel u:r:ueventd:s0
+    user root
+    shutdown critical
 
 service console /system/bin/sh
     class core
@@ -415,13 +380,6 @@ on property:ro.debuggable=1
     chmod 0773 /data/misc/trace
     start console
 
-# adbd is controlled via property triggers in init.<platform>.usb.rc
-service adbd /apex/com.android.adbd/bin/adbd --root_seclabel=u:r:su:s0
-    class core
-    socket adbd seqpacket 660 system system
-    disabled
-    override
-    seclabel u:r:adbd:s0
 
 #INTERNAL_START
 
@@ -430,16 +388,15 @@ service emdlogger1 /system/system_ext/bin/emdlogger1
     user shell
     group system shell radio sdcard_rw inet sdcard_r media_rw
 
-service connsyslogger /system/bin/connsyslogger
+service connsyslogger /system_ext/bin/connsyslogger
     class main
     user shell
     group system shell radio sdcard_rw inet sdcard_r media_rw bluetooth gps wifi
 
 
-service loghidlsysservice /system/bin/loghidlsysservice
+service loghidlsysservice /system_ext/bin/loghidlsysservice
     class main
     user shell
     group system shell radio
-
 
 #INTERNAL_END
