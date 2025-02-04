@@ -193,7 +193,6 @@ on post-fs
 #INTERNAL_END
 
 on late-fs
-    wait_for_prop hwservicemanager.ready "true"
     start keystore2
     start vendor.keymaster-3-0
     start vendor.keymaster-3-0-trustonic
@@ -332,6 +331,9 @@ on property:ro.boot.usbconfig=0 && property:sys.usb.configfs=1
     write /proc/bootprof "INIT:start adbd"
     start adbd
 
+    # Generate linker config based on apex mounted in bootstrap namespace
+    update_linker_config
+
 on property:sys.usb.ffs.ready=1 && property:ro.boot.usbconfig=0 && property:sys.usb.configfs=1 && \
 property:vendor.usb.feature=0
     write /proc/bootprof "INIT:on property:ro.boot.usbconfig=0"
@@ -371,6 +373,9 @@ on property:ro.boot.usbconfig=2 && property:sys.usb.configfs=1
 on property:ro.boot.usbconfig=3 && property:sys.usb.configfs=1
     write /proc/bootprof "INIT:start adbd"
     start adbd
+
+    # Generate linker config based on apex mounted in bootstrap namespace
+    update_linker_config
 
 on property:sys.usb.ffs.ready=1 && property:ro.boot.usbconfig=3 && property:sys.usb.configfs=1
     write /proc/bootprof "INIT:on property:ro.boot.usbconfig 3"
