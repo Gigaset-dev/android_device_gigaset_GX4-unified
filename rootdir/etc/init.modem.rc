@@ -29,7 +29,7 @@ on early-init
     write /proc/sys/net/core/netdev_max_backlog 50000
     write /proc/sys/net/ipv4/ipfrag_high_thresh 20971520
 
-    setprop ro.vendor.net.upload.mark.default blocking
+    #setprop ro.vendor.net.upload.mark.default blocking #prize-deled for antutu network -by-peisaisai-20230206-begin
 
 on post-fs-data
 

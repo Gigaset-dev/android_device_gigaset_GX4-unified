@@ -64,9 +64,9 @@ on init
     write /dev/cpuset/top-app/cpus 0-7
 
     # prize added by xuzerui, add charge_limit, 20200424-start
-     chmod 0666 /sys/class/cmd_charge_disable/cmd_charge_disable
-	 chmod 0666 /sys/class/smartcover/state
-	 chmod 0666 /sys/devices/platform/common_node/gesture
+    chmod 0666 /sys/class/cmd_charge_disable/cmd_charge_disable
+	chmod 0666 /sys/kernel/prize/smartcover/common_node/state
+	chmod 0666 /sys/devices/platform/common_node/gesture
     # prize added by xuzerui, add charge_limit, 20200424-end
 	
 

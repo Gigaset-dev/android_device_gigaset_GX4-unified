@@ -94,6 +94,10 @@
 #v4l2 codec
 /dev/vcu    0660 camera system
 
+#vdec-fmt
+/dev/vdec-fmt   0660 media system
+/dev/fmt_sync   0660 system system
+
 #v4l2 camera
 /dev/mtk_hcp     0660 camera system
 
