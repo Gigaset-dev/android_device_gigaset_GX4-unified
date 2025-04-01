@@ -39,7 +39,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_GBE_POLICY_MASK" param1="87"></data>
                 <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
                 <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
-                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="9"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="2"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_BOOST_LR" param1="1"></data>
             </FPS>
         </Activity>
@@ -80,7 +80,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
                 <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
                 <data cmd="PERF_RES_NET_MD_HSR_MODE" param1="1"></data>
-                <data cmd="PERF_RES_THERMAL_POLICY" param1="0"></data>
+                <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
                 <data cmd="PERF_RES_FPS_FSTB_JUMP_CHECK_Q_PCT" param1="50"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
                 <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
@@ -219,7 +219,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="400"></data>
                 <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="12"></data>
                 <data cmd="PERF_RES_FPS_GBE_POLICY_MASK" param1="87"></data>
-                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="9"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="2"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_DEP_FRAMES" param1="10"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
@@ -248,7 +248,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_GCC_ENABLE" param1="0"></data>
                 <data cmd="PERF_RES_FPS_FSTB_SELF_CTRL_FPS_ENABLE" param1="0"></data>
-                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="8"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="30"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_LLF_POLICY" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
@@ -264,7 +264,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_THERMAL_POLICY" param1="0"></data>
                 <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
                 <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1200000"></data>
-                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="8"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="15"></data>
                 <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FSTB_SELF_CTRL_FPS_ENABLE" param1="0"></data>
@@ -313,7 +313,6 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN" param1="-50"></data>
                 <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="0"></data>
-                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="10"></data>
             </FPS>
         </Activity>
     </Package>
@@ -335,7 +334,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_GCC_ENABLE" param1="0"></data>
                 <data cmd="PERF_RES_FPS_FSTB_SELF_CTRL_FPS_ENABLE" param1="0"></data>
-                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="26"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="19"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
@@ -364,7 +363,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FPSGO_LLF_LIGHT_LOADING_POLICY" param1="25"></data>
                 <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="900000"></data>
                 <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="850000"></data>
-                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="29"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MAX" param1="22"></data>
            </FPS>
         </Activity>
     </Package>
@@ -439,6 +438,293 @@ any software that is unrelated to enhancing end-user experience. -->
             </FPS>
         </Activity>
     </Package>
+	<!--prize-added by tangan-improve the mark for benchmark app-begin-->
+	<Package name="com.andromeda.androbench2">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+	
+	<Package name="com.futuremark.pcmark.android.benchmark">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+	
+	<Package name="com.antutu.ABenchMark">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+	
+	<Package name="com.antutu.benchmark.full">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+	
+	<Package name="com.primatelabs.geekbench">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+
+    <Package name="com.primatelabs.geekbench6">
+       <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+
+	<Package name="com.aurorasoftworks.quadrant.ui.professional">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+	
+	<Package name="com.aurorasoftworks.quadrant.ui.advanced">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+    <Package name="com.tencent.mm">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+    <Package name="com.ss.android.ugc.aweme">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+    <Package name="org.tinghood.TpsForMobile_anzhi">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+    <Package name="com.google.android.dialer">
+        <Activity name="com.google.android.dialer.extensions.GoogleDialtactsActivity">
+           <FPS value="Common">
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1903000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="2400000"></data>
+           </FPS>
+       </Activity>
+    </Package>
+	<!--prize-added by tangan-improve the mark for benchmark app-end-->
+	    <!--prize add by xiarui for lava customer 20230204 start-->
+    <Package name="com.glbenchmark.glbenchmark27">
+        <Activity name="Common">
+            <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+            </FPS>
+        </Activity>
+    </Package>
+
+    <Package name="com.futuremark.dmandroid.application">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+
+    <Package name="org.benchmark.demo">
+        <Activity name="Common">
+           <FPS value="Common">
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+               <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+               <data cmd="PERF_RES_FPS_EARA_THERMAL_ENABLE" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+               <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+               <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+               <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+               <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+           </FPS>
+       </Activity>
+    </Package>
+    <!--prize add by xiarui for lava customer 20230204 end-->
     <Package name="air.tv.douyu.android">
         <Activity name="com.dy.live.activity.RecorderCameraPortraitActivity">
             <FPS value="Common">
