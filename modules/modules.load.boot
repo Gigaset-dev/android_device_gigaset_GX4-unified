@@ -1,7 +1,7 @@
-mkp.ko
-bootprof.ko
 leds_aw210xx.ko
 leds-aw2016.ko
+mkp.ko
+bootprof.ko
 dbgtop-drm.ko
 mrdump.ko
 mtk_disp_notify.ko
@@ -60,11 +60,11 @@ cmdq-platform-mt6789.ko
 cmdq_helper_inf.ko
 mtk-mml.ko
 mtk_panel_ext.ko
-panel-alpha-jdi-nt36672e-vdo-60hz.ko
 panel-alpha-jdi-nt36672e-vdo-60hz-qcg.ko
 panel-truly-td4330-cmd.ko
 panel-samsung-ana6705-cmd-fhdp.ko
 panel-alpha-jdi-nt36672e-cphy-vdo.ko
+panel-alpha-jdi-nt36672e-vdo-60hz.ko
 panel-tianma-r66451-cmd-120hz.ko
 mediatek-drm.ko
 aee_rs.ko
@@ -141,8 +141,8 @@ mtk-dvfsrc-helper.ko
 mtk-dvfsrc-devfreq.ko
 cache-parity.ko
 pmic_lbat_service.ko
+pmic_lvsys_notify.ko
 reset-ti-syscon.ko
-resmon_sys.ko
 mtk_slbc.ko
 vcp_status.ko
 hardware_info.ko

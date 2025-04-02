@@ -37,6 +37,7 @@ mtk_dynamic_loading_throttling.ko
 mtk_bp_thl.ko
 mtk_md_power_throttling.ko
 mtk_cpu_power_throttling.ko
+mtk_gpu_power_throttling.ko
 mtk_pbm.ko
 mtk_mdpm.ko
 reboot-mode.ko
@@ -132,7 +133,6 @@ fhctl.ko
 scp.ko
 hf_manager.ko
 sensorhub.ko
-smartpa.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
 imgsensor_isp6s.ko
@@ -159,3 +159,4 @@ task_turbo.ko
 pmsr.ko
 spmtwam.ko
 mtk_disp_sec.ko
+smartpa.ko
