@@ -46,13 +46,13 @@ vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/audio_param/AudioParamOptions_mgvi.xml
-vendor/etc/audio_param/AudioParamVersionInfo.txt
 vendor/etc/audio_param/CRSVolUI_AudioParam.xml
 vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml
 vendor/etc/audio_param/CRSVol_AudioParam.xml
 vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
+vendor/firmware/AudioParamVersionInfo.txt
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mediatek.so:vendor/lib/hw/audio.primary.mt6789.so
@@ -287,20 +287,27 @@ vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 
 # Camera
-lib64/libjni_pq.so|d21f54f51d5bd1f0659d9390f12544c9ceaaffc9
+system_ext/lib64/libjni_pq.so
 vendor/bin/hw/mt6789/camerahalserver
+vendor/etc/aibokeh_BSTAI_preview
+vendor/etc/aibokeh_BSTAI_still
 vendor/etc/BSTAISCENE
 vendor/etc/BSTSWADParamList.cfg
 vendor/etc/BSTSWAD_AI
 vendor/etc/BSTSWAD_Calib.bin
-vendor/etc/aibokeh_0.cfg
-vendor/etc/aibokeh_1.cfg
-vendor/etc/aibokeh_BSTAI
 vendor/etc/armnn_app.config
 vendor/etc/bstBackLightDetect.cfg
 vendor/etc/bst_3ddns_front.cfg
+vendor/etc/bst_3ddns_macro.cfg
 vendor/etc/bst_3ddns_main.cfg
+vendor/etc/bst_3ddns_main2.cfg
+vendor/etc/bst_3ddns_user_front.cfg
+vendor/etc/bst_3ddns_user_macro.cfg
+vendor/etc/bst_3ddns_user_main.cfg
+vendor/etc/bst_3ddns_user_wide.cfg
 vendor/etc/bst_3ddns_wide.cfg
+vendor/etc/bst_aibokeh.cfg
+vendor/etc/bst_face_unlock/bstFaceUnlock.cfg
 vendor/etc/bst_filter_config.cfg
 vendor/etc/bstbeauty.cfg
 vendor/etc/control_param_AiScene_encode.cfg
@@ -317,18 +324,16 @@ vendor/lib/libCamera_s5kgm1stmipiraw_Video_1080_120.so
 vendor/lib/libCamera_s5kgm1stmipiraw_Video_Zoom_2x.so
 vendor/lib/libOpenCL.so
 vendor/lib/libSQLiteModule_VER_ALL.so
-vendor/lib/libasn1c_core.so
-vendor/lib/libasn1c_mapi.so
-vendor/lib/libasn1c_mdmi.so
 vendor/lib/libcamalgo.utility.so
 vendor/lib/libcmdl.so
 vendor/lib/libcmdl_ndk.mtk.vndk.so
 vendor/lib/libispcameraca.so
 vendor/lib/libnxp_extamp_intf.so
-vendor/lib/libtensorflowlite.so
 vendor/lib/libverno.so
+vendor/lib/mt6789/gc08a3wide_mipi_raw_IdxMgr.so
 vendor/lib/mt6789/gc08a3wide_mipi_raw_tuning.so
-vendor/lib/mt6789/gc08a3wide_mipi_raw_tuning.so
+vendor/lib/mt6789/gc08a8wide_mipi_raw_IdxMgr.so
+vendor/lib/mt6789/gc08a8wide_mipi_raw_tuning.so
 vendor/lib/mt6789/lib3a.ae.core.so
 vendor/lib/mt6789/lib3a.ae.so
 vendor/lib/mt6789/lib3a.awb.core.so
@@ -351,6 +356,24 @@ vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so
 vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so
 vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Video_1080.so
 vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Video_4k.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Video.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Face_Capture.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Flash_Capture.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Capture.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Preview.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Video.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Capture.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Preview.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Video.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_P1_YUV.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Video_1080.so
+vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Video_4k.so
 vendor/lib/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so
 vendor/lib/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Video.so
 vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Face_Capture.so
@@ -371,6 +394,26 @@ vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so
 vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so
 vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Video_1080.so
 vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Video_4k.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Preview.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Video.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Face_Capture.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Flash_Capture.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Capture.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Preview.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Video.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Capture.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Preview.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Video.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_P1_YUV.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Capture.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_4k.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Video_1080.so
+vendor/lib/mt6789/libCamera_ov50c40mipiraw_Video_4k.so
 vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so
 vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so
 vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Face_Capture.so
@@ -410,7 +453,8 @@ vendor/lib/mt6789/libneuron_adapter_mgvi.so
 vendor/lib/mt6789/ov16a1q_mipi_raw_IdxMgr.so
 vendor/lib/mt6789/ov16a1q_mipi_raw_IdxMgr.so
 vendor/lib/mt6789/ov16a1q_mipi_raw_tuning.so
-vendor/lib/mt6789/ov16a1q_mipi_raw_tuning.so
+vendor/lib/mt6789/ov50c40_mipi_raw_IdxMgr.so
+vendor/lib/mt6789/ov50c40_mipi_raw_tuning.so
 vendor/lib/mt6789/s5kgm1st_mipi_raw_IdxMgr.so
 vendor/lib/mt6789/s5kgm1st_mipi_raw_IdxMgr.so
 vendor/lib/mt6789/s5kgm1st_mipi_raw_tuning.so
@@ -428,6 +472,8 @@ vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
+vendor/lib64/libAcceReader.so
+vendor/lib64/libAlgoUtils.so
 vendor/lib64/libBST3DDNS.so
 vendor/lib64/libBSTAiScene.so
 vendor/lib64/libBSTBackLightDetect.so
@@ -435,6 +481,7 @@ vendor/lib64/libBSTBeauty.so
 vendor/lib64/libBSTSWAD.so
 vendor/lib64/libBSTSingleAIBokeh.so
 vendor/lib64/libbstFilterCapture.so
+vendor/lib64/libBstFaceUlkImpl.so
 vendor/lib64/libCamera_ov16a1qmipiraw_Coosea_Remosaic.so
 vendor/lib64/libCamera_s5kgm1stmipiraw_Coosea_Remosaic.so
 vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_HDR.so
@@ -444,8 +491,6 @@ vendor/lib64/libCamera_s5kgm1stmipiraw_Video_Zoom_2x.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libasn1c_core.so
-vendor/lib64/libasn1c_mapi.so
-vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libcam.seninfn3d.so
 vendor/lib64/libcamalgo.3dnr.so
 vendor/lib64/libcamalgo.dngop.so
@@ -477,7 +522,28 @@ vendor/lib64/libremosaiclib.so
 vendor/lib64/libtensorflowlite.so
 vendor/lib64/libtrm.so
 vendor/lib64/libverno.so
+vendor/lib64/libSingleAIBokehUtils.so
+vendor/lib64/libbst_beauty_algoutils.so
+vendor/lib64/libmorpho_GroupPhoto.so
+vendor/lib64/libmorpho_MotionSensor.so
+vendor/lib64/libmorpho_superlowlight_algoutils.so
+vendor/lib64/libmtkcam.plugin.cap.3ddns.so
+vendor/lib64/libmtkcam.plugin.cap.aibokeh.so
+vendor/lib64/libmtkcam.plugin.cap.beauty.so
+vendor/lib64/libmtkcam.plugin.cap.filter.so
+vendor/lib64/libmtkcam.plugin.cap.groupphoto.so
+vendor/lib64/libmtkcam.plugin.cap.superlowlight.so
+vendor/lib64/libmtkcam.plugin.cap.superlowlighthdr.so
+vendor/lib64/libmtkcam.plugin.cap.swad.so
+vendor/lib64/libmtkcam.plugin.prv.aibokeh.so
+vendor/lib64/libmtkcam.plugin.prv.aiscene.so
+vendor/lib64/libmtkcam.plugin.prv.backlightdetect.so
+vendor/lib64/libmtkcam.plugin.prv.motionsensor.so
+vendor/lib64/libmtkcam.plugin.prv.swad.so
+vendor/lib64/mt6789/gc08a3wide_mipi_raw_IdxMgr.so
 vendor/lib64/mt6789/gc08a3wide_mipi_raw_tuning.so
+vendor/lib64/mt6789/gc08a8wide_mipi_raw_IdxMgr.so
+vendor/lib64/mt6789/gc08a8wide_mipi_raw_tuning.so
 vendor/lib64/mt6789/lib3a.ae.core.so
 vendor/lib64/mt6789/lib3a.ae.so
 vendor/lib64/mt6789/lib3a.ae.stat.so
@@ -517,6 +583,24 @@ vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so
 vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so
 vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Video_1080.so
 vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Video_4k.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Video.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Face_Capture.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Flash_Capture.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Capture.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Preview.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Video.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Capture.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Preview.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Video.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_P1_YUV.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Video_1080.so
+vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Video_4k.so
 vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so
 vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Video.so
 vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Face_Capture.so
@@ -537,6 +621,26 @@ vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so
 vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so
 vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Video_1080.so
 vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Video_4k.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Preview.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Video.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Face_Capture.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Flash_Capture.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Capture.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Preview.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Video.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Capture.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Preview.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Video.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_P1_YUV.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Capture.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_4k.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Video_1080.so
+vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Video_4k.so
 vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so
 vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so
 vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Face_Capture.so
@@ -705,6 +809,8 @@ vendor/lib64/mt6789/libstereoinfoaccessor_vsdof.so
 vendor/lib64/mt6789/libvainr_model.so
 vendor/lib64/mt6789/ov16a1q_mipi_raw_IdxMgr.so
 vendor/lib64/mt6789/ov16a1q_mipi_raw_tuning.so
+vendor/lib64/mt6789/ov50c40_mipi_raw_IdxMgr.so
+vendor/lib64/mt6789/ov50c40_mipi_raw_tuning.so
 vendor/lib64/mt6789/s5kgm1st_mipi_raw_IdxMgr.so
 vendor/lib64/mt6789/s5kgm1st_mipi_raw_tuning.so
 vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so
@@ -723,21 +829,21 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
 # Charger - from TP1A.220624.014
-bin/kpoc_charger|473b4f1b18b8a2b79b3d2c5028cc3f3634f7e836
-etc/init/kpoc_charger.rc|3fb4409bb355ae302148afac7e65a87423d6d43c
-lib64/libshowlogo.so|385803d9d62d0be3fbd821318a8370bde90eef1e
+system_ext/bin/kpoc_charger
+system_ext/etc/init/kpoc_charger.rc
+system_ext/lib64/libshowlogo.so
 
 # Display
-lib/vendor.mediatek.hardware.pq@2.0.so
-lib/vendor.mediatek.hardware.pq@2.1.so
-lib/vendor.mediatek.hardware.pq@2.2.so
-lib/vendor.mediatek.hardware.pq@2.3.so
-lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
-lib64/vendor.mediatek.hardware.pq@2.0.so
-lib64/vendor.mediatek.hardware.pq@2.1.so
-lib64/vendor.mediatek.hardware.pq@2.2.so
-lib64/vendor.mediatek.hardware.pq@2.3.so
-lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
+system_ext/lib/vendor.mediatek.hardware.pq@2.0.so
+system_ext/lib/vendor.mediatek.hardware.pq@2.1.so
+system_ext/lib/vendor.mediatek.hardware.pq@2.2.so
+system_ext/lib/vendor.mediatek.hardware.pq@2.3.so
+system_ext/lib/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so
+system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
 system_ext/lib64/libBSTBeautyAPK.so
 system_ext/lib64/libUvPanorama.so
 system_ext/lib64/libaed.so
@@ -868,7 +974,7 @@ vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/egl/mt6789/libGLES_mali.so
-vendor/lib64/hw/hwcomposer.mtk_common.so|f54c6dbca8930524b64f0c26913e2d56d5041310
+vendor/lib64/hw/hwcomposer.mtk_common.so
 vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6789/gralloc.common.so
@@ -971,13 +1077,13 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/st21nfc_conf.txt
 vendor/lib64/nfc_nci.st21nfc.st.so
 
-# EngineerMode - from UP1A.231005.007
--system_ext/app/EngineerMode/EngineerMode.apk|3a7251e808a1a93bc70e6c234ac3dcf604ec3748
-system_ext/lib64/libem_aoltest_jni.so|6859b70fb6350773df3397b0a7df600f9ac57898
-system_ext/lib64/libem_audio_jni.so|899992c3acf594e4907f0043ff58b22758f5f76a
-system_ext/lib64/libem_bleoffload_jni.so|ad1667d1977599d096cd798b037f35b39f9c24dc
-system_ext/lib64/libem_support_jni.so|95f8fa6344a0fb63e11e913f223e648cbfe31999
-system_ext/lib64/libem_wifi_jni.so|95f21a94cb3c316413ed930bb52a8894efc9c35d
+# EngineerMode
+-system_ext/app/EngineerMode/EngineerMode.apk
+system_ext/lib64/libem_aoltest_jni.so
+system_ext/lib64/libem_audio_jni.so
+system_ext/lib64/libem_bleoffload_jni.so
+system_ext/lib64/libem_support_jni.so
+system_ext/lib64/libem_wifi_jni.so
 
 # Factory
 -priv-app/PriFactoryTest/PriFactoryTest.apk
@@ -990,9 +1096,9 @@ system_ext/bin/emdlogger
 system_ext/bin/mdlogger
 system_ext/etc/init/emdlogger.rc
 system_ext/etc/init/mdlogger.rc
-lib/libmemoryDumpEncoder.so
-lib64/libmemoryDumpEncoder.so
-lib64/libccci_util_sys.so
+system_ext/lib/libmemoryDumpEncoder.so
+system_ext/lib64/libmemoryDumpEncoder.so
+system_ext/lib64/libccci_util_sys.so
 
 # Firmware
 vendor/etc/MNL_Config.xml
@@ -1076,6 +1182,7 @@ vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der
 vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der
 vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der
 vendor/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt
+vendor/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt
 vendor/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt
 vendor/etc/ipsec/ipsec.d/cacerts/Root-R3.cer
 vendor/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt
@@ -1083,6 +1190,7 @@ vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der
 vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der
 vendor/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der
 vendor/etc/ipsec/ipsec.d/cacerts/gold.cer
+vendor/etc/ipsec/ipsec.d/cacerts/root-singtel.crt
 vendor/etc/ipsec/ipsec.d/cacerts/thawte.der
 vendor/etc/ipsec/ssl/openssl.cnf
 vendor/etc/ipsec/strongswan.conf
@@ -1278,7 +1386,7 @@ system_ext/lib64/libmtk_vt_wrapper.so|4a59d2d0ea2a276afd478a5b5ea7b7ee06b3276a
 system_ext/lib64/libmtkperf_client.so|566c82c940bf98baef1922aa0fa9423962931c83
 system_ext/lib64/libsignal.so|5595f5d7b6e7320572ec05ac199f951d141b516a
 system_ext/lib64/libsink.so|5511822c30af7d219107947a86dca9eb1b66cb55
-system_ext/lib64/libsource.so|298093044c3e9896c2004124164897e7b9fc929a
+system_ext/lib64/libsource.so|9f2a7294adcee3e5abe0addbe75149fdd576a78a
 system_ext/lib64/libvcodec_cap.so|2a0b43f7e64115ce7eff027780c1374162b8461b
 system_ext/lib64/libvcodec_capenc.so|2a9dd2edc46a17f402f342f09035ba5c25bb7ea2
 system_ext/lib64/libvsim-adaptor-client.so|41437898972553ad8df70a1f8e9d170e63bbac15
@@ -1612,8 +1720,8 @@ vendor/bin/starter
 vendor/bin/stp_dump3
 vendor/bin/stroke
 vendor/bin/xcap
-vendor/etc/apdb/APDB_MT6789___W2321
-vendor/etc/apdb/APDB_MT6789___W2321_ENUM
+vendor/etc/apdb/APDB_MT6789___W2422
+vendor/etc/apdb/APDB_MT6789___W2422_ENUM
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml
@@ -1671,9 +1779,6 @@ vendor/lib/libsimmelock.so
 vendor/lib/libssl-md.so
 vendor/lib/libstrongswan.so
 vendor/lib/libsysenv.so
-vendor/lib/libtranslator_mapi_v3.0.so
-vendor/lib/libtranslator_mdmi_v2.8.2.so
-vendor/lib/libtranslator_utils.so
 vendor/lib64/libcapctrl.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
@@ -1713,8 +1818,6 @@ vendor/lib64/libsimmelock.so
 vendor/lib64/libssl-md.so
 vendor/lib64/libstrongswan.so
 vendor/lib64/libsysenv.so
-vendor/lib64/libtranslator_mapi_v3.0.so
-vendor/lib64/libtranslator_mdmi_v2.8.2.so
 vendor/lib64/libtranslator_utils.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
@@ -1780,6 +1883,8 @@ vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Misc
+vendor/bin/lepton-control
+vendor/bin/lepton-data-collector
 vendor/bin/chipinfo
 vendor/bin/dconfig
 vendor/bin/dexecutor
