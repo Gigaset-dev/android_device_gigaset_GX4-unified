@@ -25,6 +25,10 @@ sys.ipo.disable=1
 sys.ipo.pwrdncap=2
 ro.iorapd.enable=false
 
+# MTK
+ro.mediatek.version.branch=alps-mp-u0.mssi1
+ro.mediatek.version.release=alps-mp-u0.mp1.rc-V6.54.u0mp1rc.k6989v1.64_P10
+
 # Perf
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
