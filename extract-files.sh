@@ -75,11 +75,11 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
             ;;
-        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
+        vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
-        vendor/lib64/libmtkcam_stdutils.so|\
-        vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
+        vendor/lib64/mt6789/libmtkcam_stdutils.so|\
+        vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/etc/gnss/agps_profiles_conf2.xml)
@@ -96,7 +96,7 @@ function blob_fixup {
             ;;
         vendor/bin/mnld)
             ;&
-        vendor/lib64/libcam.utils.sensorprovider.so)
+        vendor/lib64/mt6789/libcam.utils.sensorprovider.so)
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v30.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
