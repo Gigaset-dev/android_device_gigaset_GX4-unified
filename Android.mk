@@ -18,15 +18,6 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter vidofnir GX4, $(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-define generate-symlinks
-$(subst vendor/,,$(subst /$(2),,$(foreach file,$(shell cat $(1)),$(if $(findstring :,$(file)),,$(if $(findstring $(2),$(file)),$(file))))))
-endef
-
-GX4_SYMLINK := $(addprefix $(TARGET_OUT_VENDOR)/, $(call generate-symlinks,device/gigaset/GX4-unified/proprietary-files.txt,mt6789))
-$(GX4_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf mt6789/$(notdir $@) $@
-
 VENDOR_SYMLINKS := \
     $(TARGET_OUT_VENDOR)/lib/hw \
     $(TARGET_OUT_VENDOR)/lib64/hw
@@ -39,5 +30,5 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
 	$(hide) touch $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(GX4_SYMLINK) $(VENDOR_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_SYMLINKS)
 endif
