@@ -461,7 +461,6 @@ vendor/lib/mt6789/s5kgm1st_mipi_raw_tuning.so
 vendor/lib/mt6789/s5kgm1st_mipi_raw_tuning.so
 vendor/lib/s5k4h7_mipi_raw_IdxMgr.so
 vendor/lib/s5k2lqsx_mipi_raw_IdxMgr.so
-vendor/lib/gc08a3wide_mipi_raw_IdxMgr.so
 vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so
@@ -816,7 +815,6 @@ vendor/lib64/mt6789/s5kgm1st_mipi_raw_tuning.so
 vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so
 vendor/lib64/s5k2lqsx_mipi_raw_IdxMgr.so
-vendor/lib64/gc08a3wide_mipi_raw_IdxMgr.so
 vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so
