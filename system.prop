@@ -4,6 +4,7 @@
 
 # Audio
 ro.audio.silent=0
+ro.audio.usb.period_us=16000
 
 # Brand
 Build.BRAND=MTK
