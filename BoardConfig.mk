@@ -70,9 +70,6 @@ BOARD_MKBOOTIMG_ARGS += --board ""
 # Display
 TARGET_SCREEN_DENSITY := 320
 
-# FM Radio
-BOARD_HAVE_MTK_FM := true
-
 # Filesystem
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -139,6 +136,7 @@ BOARD_HAS_MTK_HARDWARE := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
