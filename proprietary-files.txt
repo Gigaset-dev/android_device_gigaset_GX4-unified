@@ -827,7 +827,7 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
 # libmtkcam_metastore  - from k6789v1_64_bsp UP1A.231005.007
-vendor/lib64/mt6789/libmtkcam_metastore.so|0f6207a56952d8a777f50f0099f2dbd80f672a8a
+vendor/lib64/mt6789/libmtkcam_metastore.so
 
 # Charger - from TP1A.220624.014
 system_ext/bin/kpoc_charger
