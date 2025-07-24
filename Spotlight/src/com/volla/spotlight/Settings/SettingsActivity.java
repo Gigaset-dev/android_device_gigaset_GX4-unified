@@ -24,7 +24,7 @@ import android.os.BatteryManager;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.R;
+import com.android.settingslib.collapsingtoolbar.R;
 import com.volla.spotlight.Manager.AnimationManager;
 
 public class SettingsActivity extends CollapsingToolbarBaseActivity {
