@@ -398,6 +398,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libprocessgroup_shim
 
 # Shipping API level

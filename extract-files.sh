@@ -105,6 +105,20 @@ function blob_fixup {
         vendor/lib64/hw/hwcomposer.mtk_common.so)
             grep -q "libprocessgroup_shim.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
             ;;
+        vendor/bin/STFlashTool|\
+        vendor/bin/factory|\
+        vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2|\
+        vendor/bin/nfcstackp-vendor|\
+        vendor/lib/libnvram.so|\
+        vendor/lib/libsysenv.so|\
+        vendor/lib/libtflite_mtk.so|\
+        vendor/lib/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so|\
+        vendor/lib64/libnvram.so|\
+        vendor/lib64/libsysenv.so|\
+        vendor/lib64/libtflite_mtk.so|\
+        vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so)
+            grep -q "libbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
     esac
 }
 
