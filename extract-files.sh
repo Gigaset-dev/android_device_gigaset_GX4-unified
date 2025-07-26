@@ -102,6 +102,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/lib64/hw/hwcomposer.mtk_common.so)
+            grep -q "libprocessgroup_shim.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
+            ;;
     esac
 }
 

@@ -396,6 +396,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/modules/init.insmod.mt6789.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6789.cfg
 
+# Shims
+PRODUCT_PACKAGES += \
+    libprocessgroup_shim
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
