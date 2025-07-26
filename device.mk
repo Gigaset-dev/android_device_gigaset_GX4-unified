@@ -235,6 +235,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    libcppbor_external.vendor \
     libkeymaster_messages.vendor \
     lib_android_keymaster_keymint_utils.vendor \
     libkeymint.vendor \
