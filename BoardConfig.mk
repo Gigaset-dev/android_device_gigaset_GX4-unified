@@ -76,7 +76,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):init_gigaset_gx4
-TARGET_RECOVERY_DEVICE_MODULES ?= init_gigaset_gx4
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
