@@ -119,6 +119,9 @@ function blob_fixup {
         vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so)
             grep -q "libbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
+        system_ext/bin/kpoc_charger)
+            grep -q "libbinder_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
+            ;;
     esac
 }
 

@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
+    libbinder_shim \
     libsuspend
 
 # DMC
