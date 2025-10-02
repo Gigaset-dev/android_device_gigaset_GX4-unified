@@ -328,7 +328,7 @@
     </array>
 
     <array name="config_sfps_sensor_props_0" translatable="false">
-        <item></item>
+        <item>local:0</item>
         <item>720</item>
         <item>630</item>
         <item>125</item>
