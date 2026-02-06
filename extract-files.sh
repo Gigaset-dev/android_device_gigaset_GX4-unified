@@ -108,6 +108,7 @@ function blob_fixup {
         vendor/bin/STFlashTool|\
         vendor/bin/factory|\
         vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2|\
+        vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek|\
         vendor/bin/nfcstackp-vendor|\
         vendor/lib/libnvram.so|\
         vendor/lib/libsysenv.so|\
