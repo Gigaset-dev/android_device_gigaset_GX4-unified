@@ -58,6 +58,9 @@ function blob_fixup {
         system_ext/lib64/libsource.so)
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
+        vendor/bin/hw/mtkfusionrild)
+        "${PATCHELF}" --add-needed "libutils-v32.so" "${2}"
+            ;;
         vendor/lib64/libwifi-hal-mtk.so)
             "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
             ;;
