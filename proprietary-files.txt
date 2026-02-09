@@ -1363,7 +1363,7 @@ vendor/lib64/libfgauge_gm30.so
 -system_ext/framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
 -system_ext/framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a946cf57a4cf
 -system_ext/framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
--system_ext/priv-app/ImsService/ImsService.apk|e2d3c7154ebe5ebc3594d4647d06d80fd1481cc7
+-system_ext/priv-app/ImsService/ImsService.apk|7da9ddb9d574253aceab1900909ae9d2149a6f1b
 system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
 system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
 system_ext/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
