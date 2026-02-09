@@ -36,6 +36,7 @@
         android:label="@string/spotlight_settings_app_name"
         android:persistent="true"
         android:defaultToDeviceProtectedStorage="true"
+        android:theme="@style/Theme.SubSettingsBase.Expressive"
         android:directBootAware="true">
 
         <receiver
@@ -87,8 +88,7 @@
         <activity
             android:name=".Settings.SettingsActivity"
             android:exported="true"
-            android:label="@string/spotlight_settings_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/spotlight_settings_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -108,8 +108,7 @@
 
         <activity
             android:name=".Settings.NotifsSettingsActivity"
-            android:exported="false"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
