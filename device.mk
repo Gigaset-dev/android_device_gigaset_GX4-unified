@@ -273,7 +273,7 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor \
-    libstagefright_foundation-v33
+    libstagefright_foundation-v33.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
