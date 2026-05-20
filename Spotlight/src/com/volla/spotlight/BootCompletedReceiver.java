@@ -19,10 +19,13 @@
 package com.volla.spotlight;
 
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.util.Log;
 
+import com.volla.spotlight.Services.NotificationService;
 import com.volla.spotlight.Utils.ServiceUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -33,6 +36,18 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        // Enable the notification listener only after the system is far enough along
+        // that PackageManager is ready. Declaring it disabled in the manifest avoids
+        // NotificationManagerService binding it during early system_server startup,
+        // which races StorageManagerService.getMountModeInternal and NPEs.
+        PackageManager pm = context.getPackageManager();
+        ComponentName cn = new ComponentName(context, NotificationService.class);
+        if (pm.getComponentEnabledSetting(cn)
+                != PackageManager.COMPONENT_ENABLED_STATE_ENABLED) {
+            pm.setComponentEnabledSetting(cn,
+                    PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                    PackageManager.DONT_KILL_APP);
+        }
         ServiceUtils.checkSpotlightService(context);
     }
 }
