@@ -4,6 +4,31 @@ import argparse
 from os import stat
 
 
+def trim_trailing_zeros_keep_one(input_file):
+    """Trim trailing 0x00 bytes, keeping only one if present."""
+    file1 = open(input_file, 'rb+')
+    file1.seek(0, 2)
+    filesize = file1.tell()
+
+    if filesize == 0:
+        file1.close()
+        return
+
+    trailing_zeros = 0
+    pos = filesize - 1
+    while pos >= 0:
+        file1.seek(pos)
+        if file1.read(1) != b'\x00':
+            break
+        trailing_zeros += 1
+        pos -= 1
+
+    if trailing_zeros > 1:
+        file1.truncate(filesize - trailing_zeros + 1)
+
+    file1.close()
+
+
 def padding_file(input_file, align_num):
     """Fill 0 to make input_file's size a multiple of align_num."""
     filesize = stat(input_file).st_size
@@ -34,6 +59,7 @@ def main():
     parser.add_argument('--dtbo', type=str, help='Path to the DTBO img')
     args = parser.parse_args()
 
+    trim_trailing_zeros_keep_one(args.dtbo)
     append_file(args.dtbo, args.cert1, args.alignment)
     append_file(args.dtbo, args.cert2, args.alignment)
 
